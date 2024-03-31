@@ -1,0 +1,1648 @@
+[
+    {
+      "restaurant_id": "1",
+      "restaurant_name": "Delicious Delights",
+      "restaurant_image": "https://img.freepik.com/free-photo/restaurant-interior_1127-3394.jpg?t=st=1711450364~exp=1711453964~hmac=73c1a8093655dc3d90398f8c7995d3c5a123853ece298f687dd480b1d2c43fb5&w=900",
+      "location": "Trichy",
+      "ratings": "4.5",
+      "votes": "78800",
+      "restaurant_status": {
+        "type": "String",
+        "default": "open"
+      },
+      "dishes": [
+        {
+          "dish_id": "1",
+          "dish_name": "Special Burger",
+          "dish_image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00001022.jpg?ver=40.31",
+          "dish_price": "300",
+          "dish_detail": {
+            "ingredients": ["Beef patty", "Lettuce", "Tomato", "Cheese", "Pickles", "Special sauce"],
+            "description": "A delicious burger with a juicy beef patty, fresh lettuce and tomato, melted cheese, pickles, and our special sauce, all served on a toasted bun."
+          }
+        },
+        {
+          "dish_id": "2",
+          "dish_name": "Gourmet Pizza",
+          "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/0d542e845410d41657e1c91cd53704d1",
+          "dish_price": "250",
+          "dish_detail": {
+            "ingredients": ["Pizza dough", "Tomato sauce", "Mozzarella cheese", "Pepperoni", "Mushrooms", "Bell peppers", "Onions"],
+            "description": "A classic gourmet pizza with tomato sauce, mozzarella cheese, pepperoni, mushrooms, bell peppers, and onions, baked to perfection."
+          }
+        },
+        {
+          "dish_id": "3",
+          "dish_name": "Seafood Platter",
+          "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/7f5375e30679420cb4b691126feb6d61",
+          "dish_price": "300",
+          "dish_detail": {
+            "ingredients": ["Shrimp", "Fish fillet", "Calamari", "Lemon wedges", "Tartar sauce", "French fries"],
+            "description": "A delightful seafood platter featuring shrimp, fish fillet, calamari rings, served with lemon wedges, tartar sauce, and a side of crispy French fries."
+          }
+        },
+        {
+          "dish_id": "4",
+          "dish_name": "Vegetarian Pasta",
+          "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/c0be3b44a32542c5aef5fa94994f0e52",
+          "dish_price": "150",
+          "dish_detail": {
+            "ingredients": ["Pasta", "Tomatoes", "Bell peppers", "Onions", "Garlic", "Olive oil", "Parmesan cheese"],
+            "description": "A flavorful vegetarian pasta dish with fresh tomatoes, bell peppers, onions, garlic, and grated Parmesan cheese, drizzled with olive oil."
+          }
+        },
+        {
+          "dish_id": "5",
+          "dish_name": "Sushi Combo",
+          "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/662e1cdee610e916fdfa68fd61836b85",
+          "dish_price": "250",
+          "dish_detail": {
+            "ingredients": ["Sushi rice", "Nori seaweed", "Assorted fish", "Avocado", "Cucumber", "Wasabi", "Soy sauce"],
+            "description": "A delightful sushi combo featuring assorted fish, avocado, and cucumber rolled in sushi rice and nori seaweed, served with wasabi and soy sauce."
+          }
+        },
+        {
+          "dish_id": "6",
+          "dish_name": "Chicken Stir-Fry",
+          "dish_image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002167.jpg?ver=40.31",
+          "dish_price": "400",
+          "dish_detail": {
+            "ingredients": ["Chicken breast", "Bell peppers", "Broccoli", "Carrots", "Onions", "Garlic", "Soy sauce"],
+            "description": "A delicious chicken stir-fry dish with tender chicken breast, bell peppers, broccoli, carrots, and onions, seasoned with garlic and soy sauce."
+          }
+        },
+        {
+          "dish_id": "7",
+          "dish_name": "Cheeseburger",
+          "dish_image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K439.jpg?ver=40.31",
+          "dish_price": "350",
+          "dish_detail": {
+            "ingredients": ["Beef patty", "Lettuce", "Tomato", "Cheese", "Pickles", "Ketchup", "Mustard"],
+            "description": "A classic cheeseburger with a juicy beef patty, fresh lettuce and tomato, melted cheese, pickles, ketchup, and mustard, all served on a sesame seed bun."
+          }
+        },
+        {
+          "dish_id": "8",
+          "dish_name": "Pesto Pasta",
+          "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/5585fddb255eb849aff0c80cc07c67d0",
+          "dish_price": "200",
+          "dish_detail": {
+            "ingredients": ["Pasta", "Basil pesto", "Cherry tomatoes", "Parmesan cheese"],
+            "description": "A delightful pesto pasta dish with al dente pasta, fragrant basil pesto, cherry tomatoes, and grated Parmesan cheese."
+          }
+        },
+        {
+          "dish_id": "9",
+          "dish_name": "BBQ Chicken Wings",
+          "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/jxvofxniidmvfalfhz8x",
+          "dish_price": "180",
+          "dish_detail": {
+          "ingredients": ["Chicken wings", "BBQ sauce", "Garlic powder", "Onion powder", "Paprika"],
+          "description": "Tender BBQ chicken wings glazed with a tangy BBQ sauce and seasoned with garlic powder, onion powder, and paprika."
+        }
+      },
+      {
+        "dish_id": "10",
+        "dish_name": "Chocolate Cake",
+        "dish_image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K701.jpg?ver=40.31",
+        "dish_price": "250",
+        "dish_detail": {
+          "ingredients": ["Chocolate", "Flour", "Sugar", "Eggs", "Butter", "Milk", "Vanilla extract"],
+          "description": "A rich and indulgent chocolate cake made with premium chocolate, flour, sugar, eggs, butter, milk, and a hint of vanilla extract."
+        }
+      }
+      ]
+    },
+  
+    {
+        "restaurant_id": "2",
+        "restaurant_name": "KFC",
+        "restaurant_image": "https://www.freepik.com/premium-photo/street-cafe-little-tourist-town-old-europe_10637780.htm#fromView=search&page=1&position=5&uuid=55d66338-452e-471a-8051-152dfc40502c",
+        "location": "Melaputhur",
+        "ratings": "4.2",
+        "votes": "6756",
+        "dishes": [
+          {
+            "dish_id": "1",
+            "dish_name": "Original Recipe Chicken",
+            "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_628,h_704/TopPicks/CknChizza",
+            "dish_price": "400",
+            "dish_detail": {
+              "ingredients": ["Chicken pieces", "Flour", "Spices", "Oil"],
+              "description": "Our signature Original Recipe Chicken is made with a secret blend of herbs and spices, coated with seasoned flour, and fried until golden and crispy."
+            }
+          },
+          {
+            "dish_id": "2",
+            "dish_name": "Famous Bowl",
+            "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/a74de1a2b59bf60d616d458b7e78bd1a",
+            "dish_price": "300",
+            "dish_detail": {
+              "ingredients": ["Mashed potatoes", "Chicken tenders", "Corn", "Gravy", "Cheese"],
+              "description": "Our Famous Bowl is a hearty meal with layers of mashed potatoes, crispy chicken tenders, sweet corn, savory gravy, and melted cheese."
+            }
+          },
+          {
+            "dish_id": "3",
+            "dish_name": "Zinger Burger",
+            "dish_image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00001022.jpg?ver=40.31",
+            "dish_price": "200",
+            "dish_detail": {
+              "ingredients": ["Spicy chicken fillet", "Lettuce", "Mayonnaise", "Bun"],
+              "description": "The Zinger Burger features a spicy chicken fillet, crisp lettuce, and creamy mayonnaise sandwiched between a soft bun for a flavorful and satisfying meal."
+            }
+          },
+          {
+            "dish_id": "4",
+            "dish_name": "Popcorn Chicken",
+            "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/raq6sxtwfb9fvbd6bakq",
+            "dish_price": "300",
+            "dish_detail": {
+              "ingredients": ["Chicken pieces", "Flour", "Spices", "Oil"],
+              "description": "Our Popcorn Chicken is bite-sized pieces of tender chicken coated in seasoned flour and fried until crispy, perfect for snacking or as a side dish."
+            }
+          },
+          {
+            "dish_id": "5",
+            "dish_name": "Twister Wrap",
+            "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/9c67bdcd5218f5b53a858f4665ad0dab",
+            "dish_price": "200",
+            "dish_detail": {
+              "ingredients": ["Chicken strips", "Lettuce", "Tomatoes", "Wraps", "Sauce"],
+              "description": "The Twister Wrap features tender chicken strips, fresh lettuce, and tomatoes wrapped in a soft tortilla with your choice of sauce for a delicious handheld meal."
+            }
+          },
+          {
+            "dish_id": "6",
+            "dish_name": "Veggie Burger",
+            "dish_image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00001022.jpg?ver=40.31",
+            "dish_price": "300",
+            "dish_detail": {
+              "ingredients": ["Vegetable patty", "Lettuce", "Tomato", "Cheese", "Mayonnaise", "Bun"],
+              "description": "Our Veggie Burger features a flavorful vegetable patty, fresh lettuce, tomato, melted cheese, and creamy mayonnaise, all served on a soft bun."
+            }
+          },
+          {
+            "dish_id": "7",
+            "dish_name": "Mango Smoothie",
+            "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/ab3c315fe51ab7b6d3ebc19dac15d248",
+            "dish_price": "300",
+            "dish_detail": {
+              "ingredients": ["Mango", "Yogurt", "Honey"],
+              "description": "A refreshing Mango Smoothie made with ripe mangoes, creamy yogurt, and a touch of honey for a delightful tropical treat."
+            }
+          }
+        ]
+      }
+      ,
+      {
+        "restaurant_id": "3",
+        "restaurant_name": "A2B",
+        "restaurant_image": "https://img.freepik.com/premium-photo/restaurant_23-2148014999.jpg?w=900",
+        "location": "Melaputhur",
+        "ratings": "4.0",
+        "votes": "45800",
+        "dishes": [
+          {
+            "dish_id": "1",
+            "dish_name": "Masala Dosa",
+            "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/6a0ca887f96b61f16c15b41c9ec5a0cc",
+            "dish_price": "200",
+            "dish_detail": {
+              "ingredients": ["Rice", "Lentils", "Potatoes", "Spices", "Oil"],
+              "description": "A South Indian delicacy, Masala Dosa is a thin and crispy crepe made from fermented rice and lentil batter, filled with spiced mashed potatoes and served with coconut chutney and sambar."
+            }
+          },
+          {
+            "dish_id": "2",
+            "dish_name": "Idli",
+            "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/361064ed9b05f36d6613bf26906edeea",
+            "dish_price": "450",
+            "dish_detail": {
+              "ingredients": ["Rice", "Lentils", "Fermentation agent"],
+              "description": "Idli is a traditional South Indian steamed rice cake made from fermented rice and lentil batter, served with coconut chutney and sambar."
+            }
+          },
+          {
+            "dish_id": "3",
+            "dish_name": "Vada",
+            "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/54701e24eb6afebc88218fdd3e27f271",
+            "dish_price": "200",
+            "dish_detail": {
+              "ingredients": ["Black gram dal", "Spices", "Oil"],
+              "description": "Vada is a savory South Indian snack made from ground black gram dal, shaped into doughnuts, and deep-fried until golden and crispy."
+            }
+          },
+          {
+            "dish_id": "4",
+            "dish_name": "Poori Masala",
+            "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/3cea83ae828d7625e7f79bc5fca8cb9d",
+            "dish_price": "350",
+            "dish_detail": {
+              "ingredients": ["Wheat flour", "Potatoes", "Spices", "Oil"],
+              "description": "Poori Masala is a popular Indian dish consisting of fluffy deep-fried wheat bread (poori) served with spiced mashed potatoes."
+            }
+          },
+          {
+            "dish_id": "5",
+            "dish_name": "Rava Idli",
+            "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/fa39b91ee4eadb7e368dc53a9d5f2de9",
+            "dish_price": "200",
+            "dish_detail": {
+              "ingredients": ["Semolina", "Yogurt", "Vegetables", "Spices", "Baking soda"],
+              "description": "Rava Idli is a variation of traditional idli made with semolina, yogurt, and vegetables, steamed to perfection and served with coconut chutney and sambar."
+            }
+          },
+          {
+            "dish_id": "6",
+            "dish_name": "Pongal",
+            "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/6bf62a21ac69736cc0bb32e83037647e",
+            "dish_price": "250",
+            "dish_detail": {
+              "ingredients": ["Rice", "Split yellow lentils", "Pepper", "Cumin", "Ghee", "Cashews"],
+              "description": "Pongal is a traditional South Indian dish made with rice, split yellow lentils, and flavored with pepper, cumin, ghee, and cashews, often served during festivals."
+            }
+          },
+          {
+            "dish_id": "7",
+            "dish_name": "Bisi Bele Bath",
+            "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/153d34fb90a0a3f9e1be5f9599c30b0d",
+            "dish_detail": {
+                "ingredients": ["Rice", "Toor dal", "Vegetables", "Spices", "Tamarind", "Jaggery"],
+                "description": "Bisi Bele Bath is a flavorful Karnataka-style rice dish made with rice, toor dal, vegetables, spices, tamarind, and jaggery, creating a sweet and tangy flavor."
+              }
+          }]},          
+      
+            {
+                "restaurant_id": "4",
+                "restaurant_name": "Tasty Burgers",
+                "restaurant_image": "https://www.freepik.com/premium-photo/sea-view-from-restaurant-sea-breakfast-beach-village-cafe_22069258.htm#fromView=search&page=1&position=17&uuid=55d66338-452e-471a-8051-152dfc40502c",
+                "location": "Trichy",
+                "ratings": "4.5",
+                "votes": "57800",
+                "dishes": [
+                  {
+                    "dish_id": "1",
+                    "dish_name": "Classic Cheeseburger",
+                    "dish_image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00001022.jpg?ver=40.31",
+                    "dish_price": "200",
+                    "dish_detail": {
+                      "ingredients": ["Beef patty", "Cheese slice", "Lettuce", "Tomato", "Onion", "Pickles", "Ketchup", "Mustard", "Bun"],
+                      "description": "A classic cheeseburger featuring a juicy beef patty, melted cheese, fresh lettuce, tomato, onion, pickles, and condiments like ketchup and mustard, all sandwiched between a soft bun."
+                    }
+                  },
+                  {
+                    "dish_id": "2",
+                    "dish_name": "Bacon Burger",
+                    "dish_image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K439.jpg?ver=40.31",
+                    "dish_price": "300",
+                    "dish_detail": {
+                      "ingredients": ["Beef patty", "Bacon strips", "Cheese", "Lettuce", "Tomato", "Onion", "Pickles", "Ketchup", "Mustard", "Bun"],
+                      "description": "A delicious bacon burger with a beef patty, crispy bacon strips, melted cheese, fresh lettuce, tomato, onion, pickles, and classic burger condiments, served on a toasted bun."
+                    }
+                  },
+                  {
+                    "dish_id": "4",
+                    "dish_name": "Puliyogare",
+                    "dish_image": "https://example.com/images/puliyogare.jpg",
+                    "dish_price": "250",
+                    "dish_detail": {
+                      "ingredients": ["Rice", "Tamarind paste", "Spices", "Jaggery", "Peanuts", "Sesame seeds", "Oil"],
+                      "description": "Puliyogare is a tangy and flavorful South Indian rice dish made with tamarind paste, spices, jaggery, peanuts, sesame seeds, and tempered with aromatic seasoning."
+                    }
+                
+                  },
+                  {
+                    "dish_id": "5",
+                    "dish_name": "Onion Uttapam",
+                    "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/1fe570b38c6a59a1a3a711c8b3dae730",
+                    "dish_price": "300",
+                    "dish_detail": {
+                      "ingredients": ["Rice", "Urad dal", "Onion", "Green chili", "Coriander leaves", "Salt"],
+                      "description": "Onion Uttapam is a savory South Indian pancake made with fermented rice and lentil batter, topped with chopped onions, green chilies, and coriander leaves, cooked until golden brown."
+                    }
+                  }
+                ]
+              },
+              
+              {
+                "restaurant_id": "5",
+                "restaurant_name": "Pizza Palace",
+                "restaurant_image": "https://www.freepik.com/free-photo/young-waitress-setting-table_2415490.htm#fromView=search&page=1&position=22&uuid=55d66338-452e-471a-8051-152dfc40502c",
+                "location": "Chennai",
+                "ratings": "4.5",
+                "votes": "78560",
+                "dishes": [
+                  {
+                    "dish_id": "1",
+                    "dish_name": "Pepperoni Pizza",
+                    "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/0d542e845410d41657e1c91cd53704d1",
+                    "dish_price": "300",
+                    "dish_detail": {
+                      "ingredients": ["Pizza dough", "Tomato sauce", "Mozzarella cheese", "Pepperoni slices", "Herbs", "Olive oil"],
+                      "description": "Pepperoni Pizza is a classic pizza topped with tomato sauce, melted mozzarella cheese, pepperoni slices, and a blend of herbs, baked to perfection in a wood-fired oven."
+                    }
+                  },
+                  {
+                    "dish_id": "2",
+                    "dish_name": "Margherita Pizza",
+                    "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/0d542e845410d41657e1c91cd53704d1",
+                    "dish_price": "290",
+                    "dish_detail": {
+                      "ingredients": ["Pizza dough", "Tomato sauce", "Fresh mozzarella cheese", "Basil leaves", "Olive oil"],
+                      "description": "Margherita Pizza is a traditional Italian pizza topped with tomato sauce, fresh mozzarella cheese, basil leaves, and a drizzle of olive oil, representing the colors of the Italian flag."
+                    }
+                  },
+                  {
+                    "dish_id": "3",
+                    "dish_name": "Fried Chicken",
+                    "dish_image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000892.jpg?ver=40.31",
+                    "dish_price": "400",
+                    "dish_detail": {
+                      "ingredients": ["Chicken pieces", "Flour", "Egg", "Spices", "Oil"],
+                      "description": "Fried Chicken is a crispy and flavorful dish made by coating chicken pieces with seasoned flour, dipping in egg, and deep-frying until golden brown and crunchy."
+                    }
+                  },
+                  {
+                    "dish_id": "4",
+                    "dish_name": "Tomato Soup",
+                    "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/5f3cf669d0365d1fc319c3049171cbcd",
+                    "dish_price": "350",
+                    "dish_detail": {
+                      "ingredients": ["Tomatoes", "Onion", "Garlic", "Vegetable broth", "Cream", "Herbs", "Salt", "Pepper"],
+                      "description": "Tomato Soup is a comforting and nutritious soup made with ripe tomatoes, onions, garlic, vegetable broth, cream, and a blend of herbs, served hot with a sprinkle of pepper."
+                    }
+                  },
+                  {
+                    "dish_id": "5",
+                    "dish_name": "Shrimp Cocktail",
+                    "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/c5419324bbec49e24eaefdb7b0689947",
+                    "dish_price": "250",
+                    "dish_detail": {
+                      "ingredients": ["Shrimp", "Cocktail sauce", "Lemon wedge", "Lettuce"],
+                      "description": "Shrimp Cocktail is a classic appetizer featuring chilled cooked shrimp served with tangy cocktail sauce, a squeeze of lemon juice, and a bed of fresh lettuce."
+                    }
+                  }
+                ]
+              }
+            
+              ,
+              {
+                "restaurant_id": "6",
+                "restaurant_name": "Sushi Sensation",
+                "restaurant_image": "https://img.freepik.com/free-photo/restaurant-open-space-new-concept_140725-7438.jpg?w=740",
+                "location": "Chennai",
+                "ratings": "2.5",
+                "votes": "45800",
+                "dishes": [
+                  {
+                    "dish_id": "1",
+                    "dish_name": "California Roll",
+                    "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/jxvofxniidmvfalfhz8x",
+                    "dish_price": "300",
+                    "dish_detail": {
+                      "ingredients": ["Sushi rice", "Imitation crab", "Avocado", "Cucumber", "Nori seaweed", "Sesame seeds"],
+                      "description": "California Roll is a popular sushi roll filled with sushi rice, imitation crab meat, avocado, and cucumber, wrapped in nori seaweed and sprinkled with sesame seeds."
+                    }
+                  },
+                  {
+                    "dish_id": "2",
+                    "dish_name": "Spicy Tuna Roll",
+                    "dish_image": "https://example.com/images/spicy_tuna_roll.jpg",
+                    "dish_price": "200",
+                    "dish_detail": {
+                      "ingredients": ["Sushi rice", "Fresh tuna", "Spicy mayo", "Cucumber", "Nori seaweed"],
+                      "description": "Spicy Tuna Roll is a sushi roll filled with sushi rice, fresh tuna mixed with spicy mayo, cucumber, and wrapped in nori seaweed, offering a flavorful and spicy sushi experience."
+                    }
+                  },
+                  {
+                    "dish_id": "3",
+                    "dish_name": "Fried Chicken",
+                    "dish_image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00000892.jpg?ver=40.31",
+                    "dish_price": "400",
+                    "dish_detail": {
+                      "ingredients": ["Chicken pieces", "Flour", "Egg", "Spices", "Oil"],
+                      "description": "Fried Chicken is a crispy and flavorful dish made by coating chicken pieces with seasoned flour, dipping in egg, and deep-frying until golden brown and crunchy."
+                    }
+                  },
+                  {
+                    "dish_id": "4",
+                    "dish_name": "Tomato Soup",
+                    "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/5f3cf669d0365d1fc319c3049171cbcd",
+                    "dish_price": "350",
+                    "dish_detail": {
+                      "ingredients": ["Tomatoes", "Onion", "Garlic", "Vegetable broth", "Cream", "Herbs", "Salt", "Pepper"],
+                      "description": "Tomato Soup is a comforting and nutritious soup made with ripe tomatoes, onions, garlic, vegetable broth, cream, and a blend of herbs, served hot with a sprinkle of pepper."
+                    }
+                  },
+                  {
+                    "dish_id": "5",
+                    "dish_name": "Shrimp Cocktail",
+                    "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/c5419324bbec49e24eaefdb7b0689947",
+                    "dish_price": "250",
+                    "dish_detail": {
+                      "ingredients": ["Shrimp", "Cocktail sauce", "Lemon wedge", "Lettuce"],
+                      "description": "Shrimp Cocktail is a classic appetizer featuring chilled cooked shrimp served with tangy cocktail sauce, a squeeze of lemon juice, and a bed of fresh lettuce."
+                    }
+                  }
+                ]
+              }
+              ,
+              {
+                "restaurant_id": "7",
+                "restaurant_name": "Pasta Paradise",
+                "restaurant_image": "https://img.freepik.com/premium-photo/restaurant-interior-shot_1385-3810.jpg?w=360",
+                "location": "Tambaram",
+                "ratings": "4.1",
+                "votes": "48800",
+                "dishes": [
+                  {
+                    "dish_id": "1",
+                    "dish_name": "Fettuccine Alfredo",
+                    "dish_image": "https://example.com/images/fettuccine_alfredo.jpg",
+                    "dish_price": "300",
+                    "dish_detail": {
+                      "ingredients": ["Fettuccine pasta", "Cream", "Butter", "Parmesan cheese", "Garlic", "Salt", "Pepper"],
+                      "description": "Fettuccine Alfredo is a classic Italian pasta dish made with fettuccine pasta tossed in a rich and creamy sauce made from butter, cream, Parmesan cheese, garlic, salt, and pepper."
+                    }
+                  },
+                  {
+                    "dish_id": "2",
+                    "dish_name": "Spaghetti Bolognese",
+                    "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/jxvofxniidmvfalfhz8x",
+                    "dish_price": "200",
+                    "dish_detail": {
+                      "ingredients": ["Spaghetti pasta", "Ground beef", "Tomato sauce", "Onion", "Garlic", "Herbs", "Salt", "Pepper"],
+                      "description": "Spaghetti Bolognese is a hearty pasta dish featuring spaghetti pasta topped with a savory meat sauce made from ground beef, tomato sauce, onions, garlic, herbs, salt, and pepper."
+                    }
+                  },
+                  {
+                    "dish_id": "3",
+                    "dish_name": "Veggie Burger",
+                    "dish_image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00001023.jpg?ver=40.31",
+                    "dish_price": "350",
+                    "dish_detail": {
+                      "ingredients": ["Vegetarian patty", "Burger bun", "Lettuce", "Tomato", "Onion", "Pickles", "Cheese", "Mayonnaise", "Ketchup"],
+                      "description": "Veggie Burger is a delicious vegetarian burger made with a veggie patty, lettuce, tomato, onion, pickles, cheese, mayonnaise, and ketchup, served on a soft burger bun."
+                    }
+                  },
+                  {
+                    "dish_id": "4",
+                    "dish_name": "Salmon Fillet",
+                    "dish_image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K617.jpg?ver=40.31",
+                    "dish_price": "150",
+                    "dish_detail": {
+                      "ingredients": ["Salmon fillet", "Olive oil", "Lemon", "Herbs", "Salt", "Pepper"],
+                      "description": "Salmon Fillet is a healthy and flavorful dish featuring grilled or baked salmon fillet seasoned with olive oil, lemon, herbs, salt, and pepper."
+                    }
+                  },
+                  {
+                    "dish_id": "5",
+                    "dish_name": "Caesar Wrap",
+                    "dish_image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002316.jpg?ver=40.31",
+                    "dish_price": "150",
+                    "dish_detail": {
+                      "ingredients": ["Grilled chicken strips", "Romaine lettuce", "Caesar dressing", "Parmesan cheese", "Flour tortilla"],
+                      "description": "Caesar Wrap is a tasty wrap filled with grilled chicken strips, crisp romaine lettuce, Caesar dressing, and Parmesan cheese, wrapped in a soft flour tortilla."
+                    }
+                  },
+                  {
+                    "dish_id": "6",
+                    "dish_name": "Fajitas",
+                    "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/eanvbn0kzbebrndko5w7",
+                    "dish_price": "250",
+                    "dish_detail": {
+                      "ingredients": ["Chicken strips", "Bell peppers", "Onion", "Fajita seasoning", "Flour tortillas", "Sour cream", "Guacamole", "Salsa"],
+                      "description": "Fajitas are sizzling hot and flavorful Mexican-style grilled chicken strips served with sautéed bell peppers and onions, fajita seasoning, flour tortillas, sour cream, guacamole, and salsa."
+                    }
+                  },
+                  {
+                    "dish_id": "7",
+                    "dish_name": "Tofu Stir-Fry",
+                    "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/uhwlz3z5gnylfgd0uywm",
+                    "dish_price": "300",
+                    "dish_detail": {
+                      "ingredients": ["Tofu", "Assorted vegetables", "Soy sauce", "Garlic", "Ginger", "Sesame oil", "Cornstarch", "Rice"],
+                      "description": "Tofu Stir-Fry is a healthy and flavorful dish made with stir-fried tofu, assorted vegetables, soy sauce, garlic, ginger, and sesame oil, served with steamed rice."
+                    }
+                  },
+                  {
+                    "dish_id": "8",
+                    "dish_name": "Strawberry Cheesecake",
+                    "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/h8uh8fb7gvbipfhpbuzp",
+                    "dish_price": "250",
+                    "dish_detail": {
+                      "ingredients": ["Graham cracker crust", "Cream cheese", "Sugar", "Eggs", "Vanilla extract", "Strawberries", "Whipped cream"],
+                      "description": "Strawberry Cheesecake is a delightful dessert featuring a creamy cheesecake filling on a graham cracker crust, topped with fresh strawberries and whipped cream."
+                    }
+                  }
+                ]
+              }
+              ,
+              {
+                "restaurant_id": "8",
+                "restaurant_name": "BBQ Haven",
+                "restaurant_image": "https://img.freepik.com/premium-photo/cozy-restaurant-with-people-waiter_175935-230.jpg?w=900",
+                "location": "Tambaram",
+                "ratings": "3.5",
+                "votes": "67900",
+                "dishes": [
+                  {
+                    "dish_id": "1",
+                    "dish_name": "BBQ Ribs",
+                    "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/jxvofxniidmvfalfhz8x",
+                    "dish_price": "300",
+                    "dish_detail": {
+                      "ingredients": ["Pork ribs", "BBQ sauce", "Spices"],
+                      "description": "BBQ Ribs are tender and flavorful pork ribs grilled or smoked to perfection and coated with a tangy BBQ sauce, seasoned with spices."
+                    }
+                  },
+                  {
+                    "dish_id": "2",
+                    "dish_name": "Grilled Chicken",
+                    "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/jxvofxniidmvfalfhz8x",
+                    "dish_price": "300",
+                    "dish_detail": {
+                      "ingredients": ["Chicken breast", "Marinade", "Herbs", "Spices"],
+                      "description": "Grilled Chicken is juicy and flavorful chicken breast marinated in a blend of herbs and spices, then grilled to perfection."
+                    }
+                  },
+                  {
+                    "dish_id": "3",
+                    "dish_name": "Seafood Platter",
+                    "dish_image": "https://example.com/images/seafood_platter.jpg",
+                    "dish_price": "250",
+                    "dish_detail": {
+                      "ingredients": ["Assorted seafood", "Seasonings", "Butter", "Herbs"],
+                      "description": "Seafood Platter features a variety of fresh and delicious seafood items such as shrimp, fish, and calamari, seasoned with herbs and butter."
+                    }
+                  },
+                  {
+                    "dish_id": "4",
+                    "dish_name": "Vegetarian Pasta",
+                    "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/5585fddb255eb849aff0c80cc07c67d0",
+                    "dish_price": "180",
+                    "dish_detail": {
+                      "ingredients": ["Pasta", "Assorted vegetables", "Pesto sauce", "Cheese"],
+                      "description": "Vegetarian Pasta is a delightful pasta dish made with a variety of vegetables, tossed in pesto sauce, and topped with cheese."
+                    }
+                  },
+                  {
+                    "dish_id": "5",
+                    "dish_name": "Sushi Combo",
+                    "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_112,h_112,c_fill/662e1cdee610e916fdfa68fd61836b85",
+                    "dish_price": "200",
+                    "dish_detail": {
+                      "ingredients": ["Assorted sushi rolls", "Wasabi", "Soy sauce", "Pickled ginger"],
+                      "description": "Sushi Combo includes a variety of sushi rolls such as California rolls, spicy tuna rolls, and salmon rolls, served with wasabi, soy sauce, and pickled ginger."
+                    }
+                  },
+                  {
+                    "dish_id": "6",
+                    "dish_name": "Chicken Stir-Fry",
+                    "dish_image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002167.jpg?ver=40.31",
+                    "dish_price": "250",
+                    "dish_detail": {
+                      "ingredients": ["Chicken strips", "Assorted vegetables", "Soy sauce", "Garlic", "Ginger", "Sesame oil"],
+                      "description": "Chicken Stir-Fry is a flavorful dish made with stir-fried chicken strips and assorted vegetables, seasoned with soy sauce, garlic, ginger, and sesame oil."
+                    }
+                  },
+                  {
+                    "dish_id": "7",
+                    "dish_name": "Cheeseburger",
+                    "dish_image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00001022.jpg?ver=40.31",
+                    "dish_price": "450",
+                    "dish_detail": {
+                      "ingredients": ["Beef patty", "Cheese", "Lettuce", "Tomato", "Onion", "Pickles", "Burger bun", "Ketchup", "Mustard"],
+                      "description": "Cheeseburger is a classic burger featuring a beef patty, cheese, lettuce, tomato, onion, pickles, ketchup, and mustard, served on a soft burger bun."
+                    }
+                  },
+                  {
+                    "dish_id": "8",
+                    "dish_name": "Pesto Pasta",
+                    "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/5585fddb255eb849aff0c80cc07c67d0",
+                    "dish_price": "300",
+                    "dish_detail": {
+                      "ingredients": ["Pasta", "Pesto sauce", "Garlic", "Olive oil", "Parmesan cheese", "Basil"],
+                      "description": "Pesto Pasta is a flavorful pasta dish made with pasta tossed in pesto sauce, garlic, olive oil, Parmesan cheese, and basil."
+                    }
+                  },
+                  {
+                    "dish_id": "9",
+                    "dish_name": "BBQ Chicken Wings",
+                    "dish_image": "https://example.com/images/bbq_chicken_wings.jpg",
+                    "dish_price": "300",
+                    "dish_detail": {
+                      "ingredients": ["Chicken wings", "BBQ sauce", "Spices"],
+                      "description": "BBQ Chicken Wings are crispy and tangy chicken wings coated with BBQ sauce and a blend of spices, perfect for a flavorful snack or appetizer."
+                    }
+                  },
+                  {
+                    "dish_id": "10",
+                    "dish_name": "Chocolate Cake",
+                    "dish_image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K701.jpg?ver=40.31",
+                    "dish_price": "250",
+                    "dish_detail": {
+                      "ingredients": ["Chocolate cake", "Chocolate frosting", "Chocolate ganache"],
+                      "description": "Chocolate Cake is a decadent dessert made with layers of moist chocolate cake, rich chocolate frosting, and a luscious chocolate ganache topping."
+                    }
+                  }
+                ]
+              }
+              ,
+              {
+                "restaurant_id": "9",
+                "restaurant_name": "Authentic Tacos",
+                "restaurant_image": "https://img.freepik.com/premium-photo/restaurant-with-table-with-many-menus-it_421632-20463.jpg?w=740",
+                "location": "Trichy",
+                "ratings": "4.1",
+                "votes": "71200",
+                "dishes": [
+                  {
+                    "dish_id": "1",
+                    "dish_name": "Beef Tacos",
+                    "dish_image": "https://example.com/images/beef_tacos.jpg",
+                    "dish_price": "180",
+                    "dish_detail": {
+                      "ingredients": ["Beef", "Tortillas", "Lettuce", "Tomatoes", "Onions", "Cheese", "Salsa"],
+                      "description": "Delicious beef tacos with seasoned beef, fresh lettuce, tomatoes, onions, shredded cheese, and salsa, all wrapped in soft tortillas."
+                    }
+                  },
+                  {
+                    "dish_id": "2",
+                    "dish_name": "Fish Tacos",
+                    "dish_image": "https://example.com/images/fish_tacos.jpg",
+                    "dish_price": "200",
+                    "dish_detail": {
+                      "ingredients": ["Fish fillet", "Tortillas", "Cabbage slaw", "Avocado", "Cilantro", "Lime", "Sauce"],
+                      "description": "Tasty fish tacos featuring crispy fish fillet, cabbage slaw, avocado slices, fresh cilantro, a squeeze of lime, and your choice of sauce, all wrapped in warm tortillas."
+                    }
+                  },
+                  {
+                    "dish_id": "3",
+                    "dish_name": "Classic Cheeseburger",
+                    "dish_image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K439.jpg?ver=40.31",
+                    "dish_price": "300",
+                    "dish_detail": {
+                      "ingredients": ["Beef patty", "Lettuce", "Tomato", "Cheese", "Pickles", "Ketchup", "Mustard"],
+                      "description": "A classic cheeseburger with a juicy beef patty, fresh lettuce and tomato, melted cheese, pickles, ketchup, and mustard, all served on a sesame seed bun."
+                    }
+                  },
+                  {
+                    "dish_id": "4",
+                    "dish_name": "Pepperoni Pizza",
+                    "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/0d542e845410d41657e1c91cd53704d1",
+                    "dish_price": "300",
+                    "dish_detail": {
+                      "ingredients": ["Pizza dough", "Tomato sauce", "Mozzarella cheese", "Pepperoni slices"],
+                      "description": "A delicious pepperoni pizza with a crispy crust, tangy tomato sauce, gooey mozzarella cheese, and spicy pepperoni slices."
+                    }
+                  },
+                  {
+                    "dish_id": "5",
+                    "dish_name": "Caesar Salad",
+                    "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/18a3e3a8dc071c331dd4b60b6d2f55a7",
+                    "dish_price": "200",
+                    "dish_detail": {
+                      "ingredients": ["Romaine lettuce", "Croutons", "Parmesan cheese", "Caesar dressing"],
+                      "description": "A classic Caesar salad with crisp romaine lettuce, crunchy croutons, shaved Parmesan cheese, and tangy Caesar dressing."
+                    }
+                  },
+                  {
+                    "dish_id": "6",
+                    "dish_name": "Spaghetti Bolognese",
+                    "dish_image": "https://example.com/images/spaghetti_bolognese.jpg",
+                    "dish_price": "300",
+                    "dish_detail": {
+                      "ingredients": ["Spaghetti pasta", "Ground beef", "Tomato sauce", "Onions", "Garlic", "Herbs", "Parmesan cheese"],
+                      "description": "Tender spaghetti pasta topped with a hearty meat sauce made from ground beef, tomatoes, onions, garlic, herbs, and grated Parmesan cheese."
+                    }
+                  },
+                  {
+                    "dish_id": "7",
+                    "dish_name": "Chicken Alfredo Pasta",
+                    "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/5585fddb255eb849aff0c80cc07c67d0",
+                    "dish_price": "400",
+                    "dish_detail": {
+                      "ingredients": ["Fettuccine pasta", "Chicken breast", "Creamy Alfredo sauce", "Garlic", "Parmesan cheese"],
+                      "description": "Creamy chicken Alfredo pasta with tender fettuccine noodles, grilled chicken breast strips, rich Alfredo sauce, garlic, and Parmesan cheese."
+                    }
+                  },
+                  {
+                    "dish_id": "8",
+                    "dish_name": "Margherita Pizza",
+                    "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/0d542e845410d41657e1c91cd53704d1",
+                    "dish_price": "300",
+                    "dish_detail": {
+                      "ingredients": ["Pizza dough", "Tomato sauce", "Fresh mozzarella cheese", "Basil leaves"],
+                      "description": "A classic Margherita pizza with a thin crust, tangy tomato sauce, fresh mozzarella cheese, and fragrant basil leaves."
+                    }
+                  },
+                  {
+                    "dish_id": "9",
+                    "dish_name": "BBQ Chicken Wings",
+                    "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/18a3e3a8dc071c331dd4b60b6d2f55a7",
+                    "dish_price": "450",
+                    "dish_detail": {
+                      "ingredients": ["Chicken wings", "BBQ sauce", "Garlic powder", "Onion powder", "Paprika"],
+                      "description": "Tender BBQ chicken wings glazed with a tangy BBQ sauce and seasoned with garlic powder, onion powder, and paprika."
+                    }
+                  },
+                  {
+                    "dish_id": "10",
+                    "dish_name": "Chocolate Cake",
+                    "dish_image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K701.jpg?ver=40.31",
+                    "dish_price": "200",
+                    "dish_detail": {
+                      "ingredients": ["Chocolate", "Flour", "Sugar", "Eggs", "Butter", "Milk", "Vanilla extract"],
+                      "description": "A rich and indulgent chocolate cake made with premium chocolate, flour, sugar, eggs, butter, milk, and a hint of vanilla extract."
+                    }
+                  }
+                ]
+              },              
+              {
+                "restaurant_id": "10",
+                "restaurant_name": "Vietnamese Delight",
+                "restaurant_image": "https://img.freepik.com/premium-photo/image-wooden-table-front-young-friends-having-fun-drinking_724662-1312.jpg?w=360",
+                "location": "Melaputhur",
+                "ratings": "2.5",
+                "votes": "23800",
+                "dishes": [
+                  {
+                    "dish_id": "1",
+                    "dish_name": "Beef Tacos",
+                    "dish_image": "https://example.com/images/beef_tacos.jpg",
+                    "dish_price": "180",
+                    "dish_detail": {
+                      "ingredients": ["Seasoned beef", "Tortillas", "Lettuce", "Tomatoes", "Cheese", "Salsa", "Sour cream"],
+                      "description": "Beef Tacos are delicious and flavorful tacos made with seasoned beef, fresh vegetables, cheese, salsa, and sour cream, wrapped in soft tortillas."
+                    }
+                  },
+                  {
+                    "dish_id": "2",
+                    "dish_name": "Fish Tacos",
+                    "dish_image": "https://example.com/images/fish_tacos.jpg",
+                    "dish_price": "200",
+                    "dish_detail": {
+                      "ingredients": ["Seasoned fish", "Tortillas", "Cabbage slaw", "Avocado", "Salsa", "Lime"],
+                      "description": "Fish Tacos feature seasoned fish, cabbage slaw, avocado, salsa, and a squeeze of lime, all wrapped in soft tortillas for a delightful seafood experience."
+                    }
+                  },
+                  {
+                    "dish_id": "3",
+                    "dish_name": "Classic Cheeseburger",
+                    "dish_image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K439.jpg?ver=40.31",
+                    "dish_price": "300",
+                    "dish_detail": {
+                      "ingredients": ["Beef patty", "Cheese", "Lettuce", "Tomato", "Onion", "Pickles", "Burger bun", "Ketchup", "Mustard"],
+                      "description": "Classic Cheeseburger features a juicy beef patty topped with cheese, lettuce, tomato, onion, pickles, ketchup, and mustard, served on a soft burger bun."
+                    }
+                  },
+                  {
+                    "dish_id": "4",
+                    "dish_name": "Pepperoni Pizza",
+                    "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/0d542e845410d41657e1c91cd53704d1",
+                    "dish_price": "300",
+                    "dish_detail": {
+                      "ingredients": ["Pizza dough", "Tomato sauce", "Mozzarella cheese", "Pepperoni slices", "Herbs"],
+                      "description": "Pepperoni Pizza is a classic pizza topped with tomato sauce, mozzarella cheese, pepperoni slices, and a sprinkle of herbs, baked to perfection."
+                    }
+                  },
+                  {
+                    "dish_id": "5",
+                    "dish_name": "Caesar Salad",
+                    "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/18a3e3a8dc071c331dd4b60b6d2f55a7",
+                    "dish_price": "200",
+                    "dish_detail": {
+                      "ingredients": ["Romaine lettuce", "Caesar dressing", "Croutons", "Parmesan cheese", "Chicken (optional)"],
+                      "description": "Caesar Salad features crisp romaine lettuce tossed in Caesar dressing, topped with croutons, Parmesan cheese, and optionally, grilled chicken."
+                    }
+                  },
+                  {
+                    "dish_id": "6",
+                    "dish_name": "Spaghetti Bolognese",
+                    "dish_image": "https://example.com/images/spaghetti_bolognese.jpg",
+                    "dish_price": "300",
+                    "dish_detail": {
+                      "ingredients": ["Spaghetti pasta", "Bolognese sauce", "Ground beef", "Tomatoes", "Onions", "Garlic", "Herbs"],
+                      "description": "Spaghetti Bolognese is a classic pasta dish made with spaghetti noodles, savory Bolognese sauce, ground beef, tomatoes, onions, garlic, and herbs."
+                    }
+                  },
+                  {
+                    "dish_id": "7",
+                    "dish_name": "Chicken Alfredo Pasta",
+                    "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/5585fddb255eb849aff0c80cc07c67d0",
+                    "dish_price": "400",
+                    "dish_detail": {
+                      "ingredients": ["Fettuccine pasta", "Alfredo sauce", "Chicken breast", "Garlic", "Parmesan cheese", "Herbs"],
+                      "description": "Chicken Alfredo Pasta features tender fettuccine pasta tossed in creamy Alfredo sauce, topped with grilled chicken breast, garlic, Parmesan cheese, and herbs."
+                    }
+                  },
+                  {
+                    "dish_id": "8",
+                    "dish_name": "Chicken Caesar Wrap",
+                    "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/18a3e3a8dc071c331dd4b60b6d2f55a7",
+                    "dish_price": "8.99",
+                    "dish_detail": {
+                      "ingredients": ["Grilled chicken", "Romaine lettuce", "Caesar dressing", "Parmesan cheese", "Flour tortilla"],
+                      "description": "Chicken Caesar Wrap features tender grilled chicken, crisp romaine lettuce, Caesar dressing, and Parmesan cheese, all wrapped in a flour tortilla for a delicious handheld meal."
+                    }
+                  },
+                  {
+                    "dish_id": "9",
+                    "dish_name": "Tiramisu",
+                    "dish_image": "https://example.com/images/tiramisu.jpg",
+                    "dish_price": "400",
+                    "dish_detail": {
+                      "ingredients": ["Ladyfingers", "Espresso", "Mascarpone cheese", "Cocoa powder", "Sugar", "Whipped cream"],
+                      "description": "Tiramisu is a classic Italian dessert made with layers of ladyfingers soaked in espresso and layered with creamy mascarpone cheese mixture, dusted with cocoa powder and served chilled."
+                    }
+                  },
+                  {
+                    "dish_id": "10",
+                    "dish_name": "Pho Soup",
+                    "dish_image": "https://example.com/images/pho_soup.jpg",
+                    "dish_price": "200",
+                    "dish_detail": {
+                      "ingredients": ["Rice noodles", "Beef broth", "Beef slices", "Bean sprouts", "Lime", "Thai basil", "Jalapenos", "Hoison sauce", "Sriracha"],
+                      "description": "Pho Soup is a Vietnamese noodle soup made with rice noodles, savory beef broth, tender beef slices, bean sprouts, lime, Thai basil, jalapenos, and served with hoison sauce and sriracha for added flavor."
+      }
+    },
+    {
+      "dish_id": "11",
+      "dish_name": "Fried Rice",
+      "dish_image": "https://example.com/images/fried_rice.jpg",
+      "dish_price": "300",
+      "dish_detail": {
+        "ingredients": ["Cooked rice", "Eggs", "Vegetables (carrots, peas, corn)", "Soy sauce", "Garlic", "Green onions", "Sesame oil"],
+        "description": "Fried Rice is a flavorful dish made with cooked rice stir-fried with eggs, mixed vegetables, soy sauce, garlic, green onions, and a touch of sesame oil for added aroma and taste."
+      }
+    }
+  ]
+}
+,
+              
+{
+    "restaurant_id": "11",
+    "restaurant_name": "Mediterranean Grill",
+    "restaurant_image": "https://img.freepik.com/premium-photo/cozy-modern-interior-restaurant-teahouse-with-white-projector-screen_267395-1369.jpg?w=900",
+    "location": "Trichy",
+    "ratings": "4.5",
+    "votes": "29800",
+    "dishes": [
+      {
+        "dish_id": "1",
+        "dish_name": "Falafel Wrap",
+        "dish_image": "https://example.com/images/falafel_wrap.jpg",
+        "dish_price": "300"
+      },
+      {
+        "dish_id": "2",
+        "dish_name": "Hummus Plate",
+        "dish_image": "https://example.com/images/hummus_plate.jpg",
+        "dish_price": "200"
+      },
+      {
+        "dish_id": "3",
+        "dish_name": "Fettuccine Alfredo",
+        "dish_image": "https://example.com/images/fettuccine_alfredo.jpg",
+        "dish_price": "180"
+      },
+      {
+        "dish_id": "4",
+        "dish_name": "Fish and Chips",
+        "dish_image": "https://example.com/images/fish_and_chips.jpg",
+        "dish_price": "200"
+      },
+      {
+        "dish_id": "5",
+        "dish_name": "Vegetable Stir-Fry",
+        "dish_image": "https://example.com/images/vegetable_stir_fry.jpg",
+        "dish_price": "300"
+      },
+      {
+        "dish_id": "6",
+        "dish_name": "Chicken Caesar Wrap",
+        "dish_image": "https://example.com/images/chicken_caesar_wrap.jpg",
+        "dish_price": "300"
+      },
+      {
+        "dish_id": "7",
+        "dish_name": "Tiramisu",
+        "dish_image": "https://example.com/images/tiramisu.jpg",
+        "dish_price": "200"
+      },
+      {
+        "dish_id": "8",
+        "dish_name": "Pho Soup",
+        "dish_image": "https://example.com/images/pho_soup.jpg",
+        "dish_price": "150"
+      },
+      {
+        "dish_id": "9",
+        "dish_name": "Fried Rice",
+        "dish_image": "https://example.com/images/fried_rice.jpg",
+        "dish_price": "250"
+      }
+    ]
+  }
+  ,
+  {
+    "restaurant_id": "12",
+    "restaurant_name": "Thai Spice",
+    "restaurant_image": "https://img.freepik.com/free-photo/restaurant-open-space-new-concept_140725-7437.jpg?t=st=1711455030~exp=1711458630~hmac=a44b600b1e5db8cfb865c7190e9f0fb6ba561db60b26ec9d16e16c4f06e7932c&w=740",
+    "location": "Coimbatore",
+    "ratings": "4.1",
+    "votes": "78380",
+    "dishes": [
+      {
+        "dish_id": "1",
+        "dish_name": "Falafel Wrap",
+        "dish_image": "https://example.com/images/falafel_wrap.jpg",
+        "dish_price": "300",
+        "dish_detail": {
+          "ingredients": [
+            "Falafel balls",
+            "Pita bread",
+            "Lettuce",
+            "Tomatoes",
+            "Tahini sauce"
+          ],
+          "description": "Falafel Wrap is a delicious Middle Eastern dish consisting of crispy falafel balls, wrapped in soft pita bread with fresh lettuce, tomatoes, and drizzled with tahini sauce."
+        }
+      },
+      {
+        "dish_id": "2",
+        "dish_name": "Hummus Plate",
+        "dish_image": "https://example.com/images/hummus_plate.jpg",
+        "dish_price": "200",
+        "dish_detail": {
+          "ingredients": [
+            "Hummus",
+            "Pita bread",
+            "Olive oil",
+            "Paprika",
+            "Olives",
+            "Cucumbers",
+            "Carrots"
+          ],
+          "description": "Hummus Plate is a classic Mediterranean dish featuring creamy hummus served with warm pita bread, drizzled with olive oil, sprinkled with paprika, and accompanied by olives, cucumbers, and carrots."
+        }
+      },
+      {
+        "dish_id": "3",
+        "dish_name": "Fettuccine Alfredo",
+        "dish_image": "https://example.com/images/fettuccine_alfredo.jpg",
+        "dish_price": "180",
+        "dish_detail": {
+          "ingredients": [
+            "Fettuccine pasta",
+            "Alfredo sauce",
+            "Parmesan cheese",
+            "Garlic",
+            "Butter",
+            "Heavy cream"
+          ],
+          "description": "Fettuccine Alfredo is a classic Italian pasta dish made with fettuccine noodles tossed in a creamy Alfredo sauce made with Parmesan cheese, garlic, butter, and heavy cream."
+        }
+      },
+      {
+        "dish_id": "4",
+        "dish_name": "Fish and Chips",
+        "dish_image": "https://example.com/images/fish_and_chips.jpg",
+        "dish_price": "200",
+        "dish_detail": {
+          "ingredients": [
+            "Fish fillets",
+            "Batter",
+            "Potatoes",
+            "Salt",
+            "Vinegar",
+            "Tartar sauce"
+          ],
+          "description": "Fish and Chips is a traditional British dish consisting of crispy fried fish fillets served with golden-brown chips (French fries) and accompanied by salt, vinegar, and tartar sauce."
+        }
+      },
+      {
+        "dish_id": "5",
+        "dish_name": "Vegetable Stir-Fry",
+        "dish_image": "https://example.com/images/vegetable_stir_fry.jpg",
+        "dish_price": "300",
+        "dish_detail": {
+          "ingredients": [
+            "Assorted vegetables (bell peppers, broccoli, carrots, mushrooms)",
+            "Soy sauce",
+            "Garlic",
+            "Ginger",
+            "Vegetable oil"
+          ],
+          "description": "Vegetable Stir-Fry is a flavorful dish made with a variety of fresh vegetables stir-fried with soy sauce, garlic, and ginger in vegetable oil."
+        }
+      },
+      {
+        "dish_id": "6",
+        "dish_name": "Chicken Caesar Wrap",
+        "dish_image": "https://example.com/images/chicken_caesar_wrap.jpg",
+        "dish_price": "300",
+        "dish_detail": {
+          "ingredients": [
+            "Grilled chicken",
+            "Romaine lettuce",
+            "Caesar dressing",
+            "Parmesan cheese",
+            "Flour tortilla"
+          ],
+          "description": "Chicken Caesar Wrap features tender grilled chicken, crisp romaine lettuce, Caesar dressing, and Parmesan cheese, all wrapped in a flour tortilla for a delicious handheld meal."
+        }
+      },
+      {
+        "dish_id": "7",
+        "dish_name": "Tiramisu",
+        "dish_image": "https://example.com/images/tiramisu.jpg",
+        "dish_price": "200",
+        "dish_detail": {
+          "ingredients": [
+            "Ladyfingers",
+            "Espresso",
+            "Mascarpone cheese",
+            "Cocoa powder",
+            "Sugar",
+            "Whipped cream"
+          ],
+          "description": "Tiramisu is a classic Italian dessert made with layers of ladyfingers soaked in espresso and layered with creamy mascarpone cheese mixture, dusted with cocoa powder and served chilled."
+        }
+      },
+      {
+        "dish_id": "8",
+        "dish_name": "Pho Soup",
+        "dish_image": "https://example.com/images/pho_soup.jpg",
+        "dish_price": "150",
+        "dish_detail": {
+          "ingredients": [
+            "Rice noodles",
+            "Beef broth",
+            "Beef slices",
+            "Bean sprouts",
+            "Lime",
+            "Thai basil",
+            "Jalapenos",
+            "Hoison sauce",
+            "Sriracha"
+          ],
+          "description": "Pho Soup is a Vietnamese noodle soup made with rice noodles, savory beef broth, tender beef slices, bean sprouts, lime, Thai basil, jalapenos, and served with hoison sauce and sriracha for added flavor."
+        }
+      },
+      {
+        "dish_id": "9",
+        "dish_name": "Fried Rice",
+        "dish_image": "https://example.com/images/fried_rice.jpg",
+        "dish_price": "250",
+        "dish_detail": {
+          "ingredients": [
+            "Cooked rice",
+            "Eggs",
+            "Vegetables (carrots, peas, corn)",
+            "Soy sauce",
+            "Garlic",
+            "Green onions",
+            "Sesame oil"
+          ],
+          "description": "Fried Rice is a flavorful dish made with cooked rice stir-fried with eggs, mixed vegetables, soy sauce, garlic, green onions, and a touch of sesame oil for added aroma and taste."
+        }
+      },
+      {
+        "dish_id": "10",
+        "dish_name": "Green Curry",
+        "dish_image": "https://example.com/images/green_curry.jpg",
+        "dish_price": "300",
+        "dish_detail": {
+          "ingredients": ["Chicken or tofu", "Coconut milk", "Green curry paste", "Bell peppers", "Thai basil", "Fish sauce", "Sugar"],
+          "description": "Green Curry is a classic Thai dish made with chicken or tofu cooked in a creamy coconut milk-based sauce flavored with green curry paste, bell peppers, Thai basil, fish sauce, and sugar."
+        }
+      },
+      {
+        "dish_id": "11",
+        "dish_name": "Pad Thai",
+        "dish_image": "https://example.com/images/pad_thai.jpg",
+        "dish_price": "250",
+        "dish_detail": {
+          "ingredients": ["Rice noodles", "Shrimp or tofu", "Bean sprouts", "Eggs", "Tamarind sauce", "Fish sauce", "Peanuts", "Green onions"],
+          "description": "Pad Thai is a popular Thai street food dish made with stir-fried rice noodles, shrimp or tofu, bean sprouts, eggs, and flavored with tamarind sauce, fish sauce, peanuts, and green onions."
+        }
+      },
+      {
+        "dish_id": "12",
+        "dish_name": "Tom Yum Soup",
+        "dish_image": "https://example.com/images/tom_yum_soup.jpg",
+        "dish_price": "200",
+        "dish_detail": {
+          "ingredients": ["Shrimp or chicken", "Tomatoes", "Mushrooms", "Lemongrass", "Galangal", "Kaffir lime leaves", "Chili peppers", "Fish sauce", "Lime juice"],
+          "description": "Tom Yum Soup is a spicy and sour Thai soup made with shrimp or chicken, tomatoes, mushrooms, lemongrass, galangal, kaffir lime leaves, chili peppers, fish sauce, and lime juice, offering a burst of flavors in every spoonful."
+        }
+      },
+      {
+        "dish_id": "13",
+        "dish_name": "Spring Rolls",
+        "dish_image": "https://example.com/images/spring_rolls.jpg",
+        "dish_price": "150",
+        "dish_detail": {
+          "ingredients": ["Rice paper wrappers", "Shrimp or tofu", "Rice vermicelli", "Lettuce", "Bean sprouts", "Mint leaves", "Peanut sauce"],
+          "description": "Spring Rolls are a popular Thai appetizer made with rice paper wrappers filled with shrimp or tofu, rice vermicelli, lettuce, bean sprouts, and mint leaves, served with a side of peanut sauce for dipping."
+        }
+      },
+      {
+        "dish_id": "14",
+        "dish_name": "Mango Sticky Rice",
+        "dish_image": "https://example.com/images/mango_sticky_rice.jpg",
+        "dish_price": "180",
+        "dish_detail": {
+          "ingredients": ["Sticky rice", "Fresh mango", "Coconut milk", "Sugar", "Salt", "Sesame seeds"],
+          "description": "Mango Sticky Rice is a classic Thai dessert made with sticky rice topped with ripe mango slices, drizzled with sweetened coconut milk, and sprinkled with sesame seeds for added texture and flavor."
+        }
+      },
+      {
+        "dish_id": "15",
+        "dish_name": "Thai Iced Tea",
+        "dish_image": "https://example.com/images/thai_iced_tea.jpg",
+        "dish_price": "100",
+        "dish_detail": {
+          "ingredients": ["Black tea", "Condensed milk", "Sugar", "Ice"],
+          "description": "Thai Iced Tea is a sweet and creamy beverage made with strong black tea, sweetened condensed milk, sugar, and served over ice, offering a refreshing treat on a hot day."
+        }
+      }
+    ]
+  },
+  {
+    "restaurant_id": "13",
+    "restaurant_name": "Gourmet Sandwiches",
+    "restaurant_image": "https://img.freepik.com/free-photo/restaurant-interior_1127-3392.jpg?t=st=1711454992~exp=1711458592~hmac=2ca201b5aeefc01040c2ba383e8a8aec88b10c0489b119667da0dc5776a1b2cb&w=826",
+    "location": "Coimbatore",
+    "ratings": "4.8",
+    "votes": "98800",
+    "dishes": [
+      {
+        "dish_id": "1",
+        "dish_name": "Club Sandwich",
+        "dish_image": "https://example.com/images/club_sandwich.jpg",
+        "dish_price": "200",
+        "dish_detail": {
+          "ingredients": ["Bread slices", "Turkey slices", "Ham slices", "Lettuce", "Tomato", "Mayonnaise", "Mustard"],
+          "description": "Club Sandwich is a classic sandwich made with layers of bread slices filled with turkey, ham, lettuce, tomato, mayonnaise, and mustard."
+        }
+      },
+      {
+        "dish_id": "2",
+        "dish_name": "Caprese Panini",
+        "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/5585fddb255eb849aff0c80cc07c67d0",
+        "dish_price": "300",
+        "dish_detail": {
+          "ingredients": ["Ciabatta bread", "Tomato", "Fresh mozzarella", "Basil leaves", "Balsamic glaze"],
+          "description": "Caprese Panini is a delicious Italian sandwich made with ciabatta bread filled with fresh tomato slices, mozzarella cheese, basil leaves, and drizzled with balsamic glaze."
+        }
+      },
+      {
+        "dish_id": "3",
+        "dish_name": "Veggie Burger",
+        "dish_image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00001023.jpg?ver=40.31",
+        "dish_price": "350",
+        "dish_detail": {
+          "ingredients": ["Vegetable patty", "Burger bun", "Lettuce", "Tomato", "Onion", "Pickles", "Mayonnaise", "Ketchup"],
+          "description": "Veggie Burger is a plant-based burger made with a vegetable patty, served on a burger bun with lettuce, tomato, onion, pickles, mayonnaise, and ketchup."
+        }
+      },
+      {
+        "dish_id": "4",
+        "dish_name": "Salmon Fillet",
+        "dish_image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K617.jpg?ver=40.31",
+        "dish_price": "150",
+        "dish_detail": {
+          "ingredients": ["Salmon fillet", "Lemon", "Olive oil", "Salt", "Pepper", "Herbs"],
+          "description": "Salmon Fillet is a tender and flavorful fish dish made with grilled or baked salmon fillet seasoned with lemon, olive oil, salt, pepper, and herbs."
+        }
+      },
+      {
+        "dish_id": "5",
+        "dish_name": "Caesar Wrap",
+        "dish_image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002316.jpg?ver=40.31",
+        "dish_price": "150",
+        "dish_detail": {
+          "ingredients": ["Grilled chicken", "Romaine lettuce", "Caesar dressing", "Parmesan cheese", "Flour tortilla"],
+          "description": "Caesar Wrap features tender grilled chicken, crisp romaine lettuce, Caesar dressing, and Parmesan cheese, all wrapped in a flour tortilla for a delicious handheld meal."
+        }
+      },
+      {
+        "dish_id": "6",
+        "dish_name": "Fajitas",
+        "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/eanvbn0kzbebrndko5w7",
+        "dish_price": "250",
+        "dish_detail": {
+          "ingredients": ["Chicken strips", "Bell peppers", "Onions", "Fajita seasoning", "Flour tortillas", "Sour cream", "Guacamole", "Salsa"],
+          "description": "Fajitas are a Tex-Mex favorite made with sizzling chicken strips, bell peppers, and onions cooked with fajita seasoning, served with warm flour tortillas, sour cream, guacamole, and salsa."
+        }
+      },
+      {
+        "dish_id": "7",
+        "dish_name": "Tofu Stir-Fry",
+        "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/uhwlz3z5gnylfgd0uywm",
+        "dish_price": "300",
+        "dish_detail": {
+          "ingredients": ["Tofu cubes", "Assorted vegetables", "Soy sauce", "Garlic", "Ginger", "Vegetable oil"],
+          "description": "Tofu Stir-Fry is a delicious and nutritious dish made with tofu cubes stir-fried with assorted vegetables in a savory soy sauce, garlic, and ginger sauce."
+        }
+      },
+      {
+        "dish_id": "8",
+        "dish_name": "Strawberry Cheesecake",
+        "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/h8uh8fb7gvbipfhpbuzp",
+        "dish_price": "250",
+        "dish_detail": {
+          "ingredients": ["Cream cheese", "Graham cracker crust", "Strawberries", "Sugar", "Vanilla extract", "Whipped cream"],
+          "description": "Strawberry Cheesecake is a creamy and decadent dessert made with a graham cracker crust, creamy cheesecake filling, topped with fresh strawberries and whipped cream."
+        }
+      }
+    ]
+  },
+  {
+    "restaurant_id": "13",
+    "restaurant_name": "Gourmet Sandwiches",
+    "restaurant_image": "https://img.freepik.com/free-photo/restaurant-interior_1127-3392.jpg?t=st=1711454992~exp=1711458592~hmac=2ca201b5aeefc01040c2ba383e8a8aec88b10c0489b119667da0dc5776a1b2cb&w=826",
+    "location": "Coimbatore",
+    "ratings": "4.8",
+    "votes": "98800",
+    "dishes": [
+      {
+        "dish_id": "1",
+        "dish_name": "Club Sandwich",
+        "dish_image": "https://example.com/images/club_sandwich.jpg",
+        "dish_price": "200",
+        "dish_detail": {
+          "ingredients": ["Bread slices", "Turkey slices", "Ham slices", "Lettuce", "Tomato", "Mayonnaise", "Mustard"],
+          "description": "Club Sandwich is a classic sandwich made with layers of bread slices filled with turkey, ham, lettuce, tomato, mayonnaise, and mustard."
+        }
+      },
+      {
+        "dish_id": "2",
+        "dish_name": "Caprese Panini",
+        "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/5585fddb255eb849aff0c80cc07c67d0",
+        "dish_price": "300",
+        "dish_detail": {
+          "ingredients": ["Ciabatta bread", "Tomato", "Fresh mozzarella", "Basil leaves", "Balsamic glaze"],
+          "description": "Caprese Panini is a delicious Italian sandwich made with ciabatta bread filled with fresh tomato slices, mozzarella cheese, basil leaves, and drizzled with balsamic glaze."
+        }
+      },
+      {
+        "dish_id": "3",
+        "dish_name": "Veggie Burger",
+        "dish_image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00001023.jpg?ver=40.31",
+        "dish_price": "350",
+        "dish_detail": {
+          "ingredients": ["Vegetable patty", "Burger bun", "Lettuce", "Tomato", "Onion", "Pickles", "Mayonnaise", "Ketchup"],
+          "description": "Veggie Burger is a plant-based burger made with a vegetable patty, served on a burger bun with lettuce, tomato, onion, pickles, mayonnaise, and ketchup."
+        }
+      },
+      {
+        "dish_id": "4",
+        "dish_name": "Salmon Fillet",
+        "dish_image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K617.jpg?ver=40.31",
+        "dish_price": "150",
+        "dish_detail": {
+          "ingredients": ["Salmon fillet", "Lemon", "Olive oil", "Salt", "Pepper", "Herbs"],
+          "description": "Salmon Fillet is a tender and flavorful fish dish made with grilled or baked salmon fillet seasoned with lemon, olive oil, salt, pepper, and herbs."
+        }
+      },
+      {
+        "dish_id": "5",
+        "dish_name": "Caesar Wrap",
+        "dish_image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002316.jpg?ver=40.31",
+        "dish_price": "150",
+        "dish_detail": {
+          "ingredients": ["Grilled chicken", "Romaine lettuce", "Caesar dressing", "Parmesan cheese", "Flour tortilla"],
+          "description": "Caesar Wrap features tender grilled chicken, crisp romaine lettuce, Caesar dressing, and Parmesan cheese, all wrapped in a flour tortilla for a delicious handheld meal."
+        }
+      },
+      {
+        "dish_id": "6",
+        "dish_name": "Fajitas",
+        "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/eanvbn0kzbebrndko5w7",
+        "dish_price": "250",
+        "dish_detail": {
+          "ingredients": ["Chicken strips", "Bell peppers", "Onions", "Fajita seasoning", "Flour tortillas", "Sour cream", "Guacamole", "Salsa"],
+          "description": "Fajitas are a Tex-Mex favorite made with sizzling chicken strips, bell peppers, and onions cooked with fajita seasoning, served with warm flour tortillas, sour cream, guacamole, and salsa."
+        }
+      },
+      {
+        "dish_id": "7",
+        "dish_name": "Tofu Stir-Fry",
+        "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/uhwlz3z5gnylfgd0uywm",
+        "dish_price": "300",
+        "dish_detail": {
+          "ingredients": ["Tofu cubes", "Assorted vegetables", "Soy sauce", "Garlic", "Ginger", "Vegetable oil"],
+          "description": "Tofu Stir-Fry is a delicious and nutritious dish made with tofu cubes stir-fried with assorted vegetables in a savory soy sauce, garlic, and ginger sauce."
+        }
+      },
+      {
+        "dish_id": "8",
+        "dish_name": "Strawberry Cheesecake",
+        "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/h8uh8fb7gvbipfhpbuzp",
+        "dish_price": "250",
+        "dish_detail": {
+          "ingredients": ["Cream cheese", "Graham cracker crust", "Strawberries", "Sugar", "Vanilla extract", "Whipped cream"],
+          "description": "Strawberry Cheesecake is a creamy and decadent dessert made with a graham cracker crust, creamy cheesecake filling, topped with fresh strawberries and whipped cream."
+        }
+      }
+    ]
+  }
+  ,
+  {
+    "restaurant_id": "14",
+    "restaurant_name": "Seafood Shack",
+    "restaurant_image": "https://img.freepik.com/premium-photo/interior-view-hotel-chefchaouen-blue-city-morocco_69593-6756.jpg?w=900",
+    "location": "Coimbatore",
+    "ratings": "3.8",
+    "votes": "75800",
+    "dishes": [
+      {
+        "dish_id": "1",
+        "dish_name": "Classic Cheeseburger",
+        "dish_image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K439.jpg?ver=40.31",
+        "dish_price": "200",
+        "dish_detail": {
+          "ingredients": ["Beef patty", "Cheese", "Lettuce", "Tomato", "Onions", "Pickles", "Ketchup", "Mustard", "Burger bun"],
+          "description": "Classic Cheeseburger is a delicious burger made with a juicy beef patty, melted cheese, fresh lettuce, tomato, onions, pickles, and condiments like ketchup and mustard, all sandwiched between a soft burger bun."
+        }
+      },
+      {
+        "dish_id": "2",
+        "dish_name": "Pepperoni Pizza",
+        "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/0d542e845410d41657e1c91cd53704d1",
+        "dish_price": "400",
+        "dish_detail": {
+          "ingredients": ["Pizza dough", "Tomato sauce", "Mozzarella cheese", "Pepperoni slices", "Herbs", "Olive oil"],
+          "description": "Pepperoni Pizza is a classic pizza topped with tangy tomato sauce, melted mozzarella cheese, savory pepperoni slices, and sprinkled with aromatic herbs, all baked to perfection."
+        }
+      },
+      {
+        "dish_id": "3",
+        "dish_name": "Caesar Salad",
+        "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/5585fddb255eb849aff0c80cc07c67d0",
+        "dish_price": "200",
+        "dish_detail": {
+          "ingredients": ["Romaine lettuce", "Croutons", "Parmesan cheese", "Caesar dressing"],
+          "description": "Caesar Salad is a refreshing salad made with crisp Romaine lettuce, crunchy croutons, grated Parmesan cheese, and tossed in a creamy Caesar dressing."
+        }
+      },
+      {
+        "dish_id": "4",
+        "dish_name": "Spaghetti Bolognese",
+        "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/5585fddb255eb849aff0c80cc07c67d0",
+        "dish_price": "250",
+        "dish_detail": {
+          "ingredients": ["Spaghetti pasta", "Bolognese sauce (tomato sauce, ground beef, onions, garlic, herbs)", "Parmesan cheese"],
+          "description": "Spaghetti Bolognese is a hearty pasta dish with al dente spaghetti noodles topped with rich Bolognese sauce made from tomatoes, ground beef, onions, garlic, and herbs, garnished with Parmesan cheese."
+        }
+      },
+      {
+        "dish_id": "5",
+        "dish_name": "Chicken Alfredo Pasta",
+        "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/5585fddb255eb849aff0c80cc07c67d0",
+        "dish_price": "300",
+        "dish_detail": {
+          "ingredients": ["Fettuccine pasta", "Alfredo sauce (butter, cream, Parmesan cheese)", "Grilled chicken", "Garlic", "Parsley"],
+          "description": "Chicken Alfredo Pasta features tender fettuccine noodles coated in a creamy Alfredo sauce made with butter, cream, and Parmesan cheese, topped with grilled chicken and sprinkled with garlic and parsley."
+        }
+      },
+      {
+        "dish_id": "6",
+        "dish_name": "Margherita Pizza",
+        "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/0d542e845410d41657e1c91cd53704d1",
+        "dish_price": "200",
+        "dish_detail": {
+          "ingredients": ["Pizza dough", "Tomato sauce", "Fresh mozzarella cheese", "Basil leaves", "Olive oil"],
+          "description": "Margherita Pizza is a classic pizza topped with tangy tomato sauce, fresh mozzarella cheese, aromatic basil leaves, and a drizzle of olive oil, baked to perfection."
+        }
+      },
+      {
+        "dish_id": "7",
+        "dish_name": "BBQ Chicken Wings",
+        "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/5585fddb255eb849aff0c80cc07c67d0",
+        "dish_price": "280",
+        "dish_detail": {
+          "ingredients": ["Chicken wings", "BBQ sauce", "Spices"],
+          "description": "BBQ Chicken Wings are crispy and flavorful chicken wings coated in a tangy BBQ sauce and spices, perfect for a tasty appetizer or snack."
+        }
+      },
+      {
+        "dish_id": "8",
+        "dish_name": "Chocolate Cake",
+        "dish_image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K701.jpg?ver=40.31",
+        "dish_price": "300",
+        "dish_detail": {
+          "ingredients": ["Chocolate sponge cake", "Chocolate ganache", "Chocolate shavings", "Whipped cream"],
+          "description": "Chocolate Cake is a decadent dessert made with layers of moist chocolate sponge cake filled and frosted with rich chocolate ganache, garnished with chocolate shavings and whipped cream."
+        }
+      },
+      {
+        "dish_id": "9",
+        "dish_name": "Fettuccine Alfredo",
+        "dish_image": "https://example.com/images/fettuccine_alfredo.jpg",
+        "dish_price": "200",
+        "dish_detail": {
+            "ingredients": ["Fettuccine pasta", "Alfredo sauce (butter, cream, Parmesan cheese)", "Garlic", "Parsley"],
+            "description": "Fettuccine Alfredo is a creamy pasta dish featuring fettuccine noodles tossed in a rich Alfredo sauce made with butter, cream, and Parmesan cheese, seasoned with garlic and parsley."
+          }
+        },
+        {
+          "dish_id": "10",
+          "dish_name": "Fish and Chips",
+          "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/e82bd95142d5f069ecf160f21145b8e9",
+          "dish_price": "180",
+          "dish_detail": {
+            "ingredients": ["Cod fillets", "Batter", "Potatoes (for fries)", "Tartar sauce (optional)"],
+            "description": "Fish and Chips feature crispy battered cod fillets served with golden brown fries, typically accompanied by tartar sauce for dipping."
+          }
+        },
+        {
+          "dish_id": "11",
+          "dish_name": "Vegetable Stir-Fry",
+          "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/5585fddb255eb849aff0c80cc07c67d0",
+          "dish_price": "200",
+          "dish_detail": {
+            "ingredients": ["Assorted vegetables (bell peppers, broccoli, carrots, etc.)", "Stir-fry sauce", "Oil"],
+            "description": "Vegetable Stir-Fry is a colorful and nutritious dish made with a variety of fresh vegetables stir-fried in a flavorful sauce."
+          }
+        },
+        {
+          "dish_id": "12",
+          "dish_name": "Chicken Caesar Wrap",
+          "dish_image": "https://example.com/images/chicken_caesar_wrap.jpg",
+          "dish_price": "300",
+          "dish_detail": {
+            "ingredients": ["Grilled chicken", "Romaine lettuce", "Caesar dressing", "Parmesan cheese", "Flour tortilla"],
+            "description": "Chicken Caesar Wrap is a delicious handheld meal featuring grilled chicken, crisp romaine lettuce, tangy Caesar dressing, and Parmesan cheese wrapped in a flour tortilla."
+          }
+        },
+        {
+          "dish_id": "13",
+          "dish_name": "Tiramisu",
+          "dish_image": "https://example.com/images/tiramisu.jpg",
+          "dish_price": "200",
+          "dish_detail": {
+            "ingredients": ["Ladyfingers", "Espresso", "Mascarpone cheese", "Cocoa powder", "Sugar", "Egg yolks"],
+            "description": "Tiramisu is a classic Italian dessert made with layers of coffee-soaked ladyfingers and creamy mascarpone cheese, dusted with cocoa powder for a rich and indulgent flavor."
+          }
+        },
+        {
+          "dish_id": "14",
+          "dish_name": "Pho Soup",
+          "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/5585fddb255eb849aff0c80cc07c67d0",
+          "dish_price": "200",
+          "dish_detail": {
+            "ingredients": ["Rice noodles", "Beef or chicken broth", "Beef or chicken slices", "Bean sprouts", "Herbs", "Lime", "Chili sauce"],
+            "description": "Pho Soup is a Vietnamese noodle soup made with aromatic broth, tender meat slices, fresh herbs, and a squeeze of lime, served with bean sprouts and chili sauce on the side."
+          }
+        },
+        {
+          "dish_id": "15",
+          "dish_name": "Fried Rice",
+          "dish_image": "https://example.com/images/fried_rice.jpg",
+          "dish_price": "200",
+          "dish_detail": {
+            "ingredients": ["Cooked rice", "Vegetables (peas, carrots, onions)", "Eggs", "Soy sauce", "Oil", "Spices"],
+            "description": "Fried Rice is a flavorful dish made with stir-fried rice, mixed with vegetables, eggs, and seasonings, creating a delicious and satisfying meal."
+          }
+        }
+      ]
+    }
+    ,
+    {
+        "restaurant_id": "15",
+        "restaurant_name": "Vegetarian Haven",
+        "restaurant_image": "https://img.freepik.com/free-photo/restaurant-hall-classic-style-with-green-wooden-chairs-curtains_140725-8026.jpg?t=st=1711454921~exp=1711458521~hmac=46ca62d52248316e7b278ea3697520da1f7818ecbccfa27a6729f5c6e66cdd8e&w=900",
+        "location": "Coimbatore",
+        "ratings": "4.5",
+        "votes": "78800",
+        "dishes": [
+          {
+            "dish_id": "1",
+            "dish_name": "Vegetable Curry",
+            "dish_image": "https://example.com/images/vegetable_curry.jpg",
+            "dish_price": "200",
+            "dish_detail": {
+              "ingredients": ["Vegetables", "Curry Sauce", "Spices"],
+              "description": "Vegetable Curry is a delicious blend of fresh vegetables cooked in a flavorful curry sauce with aromatic spices, perfect for a hearty and nutritious meal."
+            }
+          },
+          {
+            "dish_id": "2",
+            "dish_name": "Quinoa Salad",
+            "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/e82bd95142d5f069ecf160f21145b8e9",
+            "dish_price": "170",
+            "dish_detail": {
+              "ingredients": [
+                "Quinoa",
+                "Mixed Greens",
+                "Cherry Tomatoes",
+                "Cucumber",
+                "Bell Peppers",
+                "Red Onion",
+                "Feta Cheese",
+                "Olive Oil",
+                "Lemon Juice",
+                "Salt",
+                "Pepper"
+              ],
+              "description": "Quinoa Salad is a refreshing and nutritious salad made with cooked quinoa, mixed greens, cherry tomatoes, cucumber, bell peppers, red onion, feta cheese, and a tangy lemon dressing."
+            }
+          },
+          {
+            "dish_id": "3",
+            "dish_name": "Veggie Burger",
+            "dish_image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00001023.jpg?ver=40.31",
+            "dish_price": "350",
+            "dish_detail": {
+              "ingredients": [
+                "Veggie Patty",
+                "Lettuce",
+                "Tomato",
+                "Onion",
+                "Pickles",
+                "Mayonnaise",
+                "Ketchup",
+                "Cheese",
+                "Burger Bun"
+              ],
+              "description": "Veggie Burger is a delicious burger made with a plant-based veggie patty, lettuce, tomato, onion, pickles, mayonnaise, ketchup, and cheese, served on a soft burger bun."
+            }
+          },
+          {
+            "dish_id": "4",
+            "dish_name": "Salmon Fillet",
+            "dish_image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-K617.jpg?ver=40.31",
+            "dish_price": "150",
+            "dish_detail": {
+              "ingredients": [
+                "Salmon Fillet",
+                "Lemon",
+                "Butter",
+                "Garlic",
+                "Herbs",
+                "Salt",
+                "Pepper"
+              ],
+              "description": "Salmon Fillet is a tender and flavorful fish fillet seasoned with lemon, butter, garlic, herbs, salt, and pepper, baked to perfection."
+            }
+          },
+          {
+            "dish_id": "5",
+            "dish_name": "Caesar Wrap",
+            "dish_image": "https://orderserv-kfc-assets.yum.com/15895bb59f7b4bb588ee933f8cd5344a/images/items/xl/D-PR00002316.jpg?ver=40.31",
+            "dish_price": "150",
+            "dish_detail": {
+              "ingredients": [
+                "Grilled Chicken",
+                "Romaine Lettuce",
+                "Caesar Dressing",
+                "Parmesan Cheese",
+                "Flour Tortilla"
+              ],
+              "description": "Caesar Wrap is a delicious wrap filled with grilled chicken, crisp romaine lettuce, Caesar dressing, parmesan cheese, all wrapped in a soft flour tortilla."
+            }
+          },
+          {
+            "dish_id": "6",
+            "dish_name": "Fajitas",
+            "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/eanvbn0kzbebrndko5w7",
+            "dish_price": "250",
+            "dish_detail": {
+                "ingredients": ["Chicken Strips", "Bell Peppers", "Onion", "Fajita Seasoning", "Flour Tortillas", "Sour Cream", "Guacamole", "Salsa"],
+                "description": "Fajitas are sizzling and flavorful chicken strips cooked with bell peppers, onions, and fajita seasoning, served with warm flour tortillas, sour cream, guacamole, and salsa."
+      }
+  },
+  {
+      "dish_id": "7",
+      "dish_name": "Tofu Stir-Fry",
+      "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_208,h_208,c_fit/uhwlz3z5gnylfgd0uywm",
+      "dish_price": "300",
+      "dish_detail": {
+          "ingredients": ["Tofu", "Mixed Vegetables", "Soy Sauce", "Ginger", "Garlic", "Sesame Oil", "Salt", "Pepper"],
+          "description": "Tofu Stir-Fry is a healthy and delicious stir-fry dish made with tofu, mixed vegetables, soy sauce, ginger, garlic, and sesame oil, seasoned with salt and pepper."
+      }
+  },
+  {
+      "dish_id": "8",
+      "dish_name": "Strawberry Cheesecake",
+      "dish_image": "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/h8uh8fb7gvbipfhpbuzp",
+      "dish_price": "250",
+      "dish_detail": {
+          "ingredients": ["Cream Cheese", "Graham Cracker Crust", "Strawberry Topping", "Whipped Cream"],
+          "description": "Strawberry Cheesecake is a creamy and decadent dessert made with cream cheese filling on a graham cracker crust, topped with strawberry topping and whipped cream."
+      }
+  }
+]
+}
+
+      
+  ]
+  
+  
+  

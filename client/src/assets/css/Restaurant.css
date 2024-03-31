@@ -1,0 +1,73 @@
+.navmain{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 1rem;
+   
+}
+.search{
+    flex-grow: 1;
+    text-align: center;
+}
+.searchinput{
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 0.5rem;
+}
+.searchbutton{
+    padding: 0.5rem 1rem;
+    color:#c53683;
+    background-color:rgb(43,43,230);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.link{
+    padding: 0.5rem 1rem;
+    color:#c53683;
+    background-color:rgb(43,43,230);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    justify-content: center; 
+}
+
+.card-container > div {
+    flex: 0 0 calc(33.333% - 1rem);
+    border-radius: 5px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    text-align: center;
+    transition: border-color 0.3s ease;
+}
+
+.card-container > div:hover {
+    border: 1px solid #ccc; 
+}
+
+.card-container img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.card-container h3 {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.card-container p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-family: "Roboto", sans-serif;
+}

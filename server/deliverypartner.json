@@ -1,0 +1,202 @@
+[
+    {
+        "role": "delivery partner",
+        "name": "Arjun Patel",
+        "password": "arjun123",
+        "location": "Chennai",
+        "email": "arjun.patel@example.com",
+        "view_orders": [],
+        "order_status": "pending",
+        "track_down": ["received order", "your meal is preparing", "meal depart", "10 mins to reach your destination", "delivered"]
+    },
+    {
+        "role": "delivery partner",
+        "name": "Kavya Gupta",
+        "password": "kavyapass",
+        "location": "Coimbatore",
+        "email": "kavya.gupta@example.com",
+        "view_orders": [],
+        "order_status": "pending",
+        "track_down": ["received order", "your meal is preparing", "meal depart", "10 mins to reach your destination", "delivered"]
+    },
+    {
+        "role": "delivery partner",
+        "name": "Rajesh Kumar",
+        "password": "rajesh456",
+        "location": "Madurai",
+        "email": "rajesh.kumar@example.com",
+        "view_orders": [],
+        "order_status": "pending",
+        "track_down": ["received order", "your meal is preparing", "meal depart", "10 mins to reach your destination", "delivered"]
+    },
+    {
+        "role": "delivery partner",
+        "name": "Ananya Singh",
+        "password": "ananya789",
+        "location": "Trichy",
+        "email": "ananya.singh@example.com",
+        "view_orders": [],
+        "order_status": "pending",
+        "track_down": ["received order", "your meal is preparing", "meal depart", "10 mins to reach your destination", "delivered"]
+    },
+    {
+        "role": "delivery partner",
+        "name": "Vikram Sharma",
+        "password": "vikrampass",
+        "location": "Salem",
+        "email": "vikram.sharma@example.com",
+        "view_orders": [],
+        "order_status": "pending",
+        "track_down": ["received order", "your meal is preparing", "meal depart", "10 mins to reach your destination", "delivered"]
+    },
+    {
+        "role": "delivery partner",
+        "name": "Nisha Reddy",
+        "password": "nishapass",
+        "location": "Tiruppur",
+        "email": "nisha.reddy@example.com",
+        "view_orders": [],
+        "order_status": "pending",
+        "track_down": ["received order", "your meal is preparing", "meal depart", "10 mins to reach your destination", "delivered"]
+    },
+    {
+        "role": "delivery partner",
+        "name": "Suresh Verma",
+        "password": "suresh456",
+        "location": "Erode",
+        "email": "suresh.verma@example.com",
+        "view_orders": [],
+        "order_status": "pending",
+        "track_down": ["received order", "your meal is preparing", "meal depart", "10 mins to reach your destination", "delivered"]
+    },
+    {
+        "role": "delivery partner",
+        "name": "Shreya Singh",
+        "password": "shreyapass",
+        "location": "Tirunelveli",
+        "email": "shreya.singh@example.com",
+        "view_orders": [],
+        "order_status": "pending",
+        "track_down": ["received order", "your meal is preparing", "meal depart", "10 mins to reach your destination", "delivered"]
+    },
+    {
+        "role": "delivery partner",
+        "name": "Ganesh Kumar",
+        "password": "ganeshpass",
+        "location": "Vellore",
+        "email": "ganesh.kumar@example.com",
+        "view_orders": [],
+        "order_status": "pending",
+        "track_down": ["received order", "your meal is preparing", "meal depart", "10 mins to reach your destination", "delivered"]
+    },
+    {
+        "role": "delivery partner",
+        "name": "Isha Gupta",
+        "password": "ishapass",
+        "location": "Thanjavur",
+        "email": "isha.gupta@example.com",
+        "view_orders": [],
+        "order_status": "pending",
+        "track_down": ["received order", "your meal is preparing", "meal depart", "10 mins to reach your destination", "delivered"]
+    },
+    {
+        "role": "delivery partner",
+        "name": "Ravi Kumar",
+        "password": "ravi123",
+        "location": "Chennai",
+        "email": "ravi.kumar@example.com",
+        "view_orders": [],
+        "order_status": "pending",
+        "track_down": ["received order", "your meal is preparing", "meal depart", "10 mins to reach your destination", "delivered"]
+    },
+    {
+        "role": "delivery partner",
+        "name": "Priya Sharma",
+        "password": "priya456",
+        "location": "Coimbatore",
+        "email": "priya.sharma@example.com",
+        "view_orders": [],
+        "order_status": "pending",
+        "track_down": ["received order", "your meal is preparing", "meal depart", "10 mins to reach your destination", "delivered"]
+    },
+    {
+        "role": "delivery partner",
+        "name": "Vijay Patel",
+        "password": "vijaypass",
+        "location": "Trichy",
+        "email": "vijay.patel@example.com",
+        "view_orders": [],
+        "order_status": "pending",
+        "track_down": ["received order", "your meal is preparing", "meal depart", "10 mins to reach your destination", "delivered"]
+    },
+    {
+        "role": "delivery partner",
+        "name": "Deepika Gupta",
+        "password": "deepika789",
+        "location": "Trichy",
+        "email": "deepika.gupta@example.com",
+        "view_orders": [],
+        "order_status": "pending",
+        "track_down": ["received order", "your meal is preparing", "meal depart", "10 mins to reach your destination", "delivered"]
+    },
+    {
+        "role": "delivery partner",
+        "name": "Rahul Mishra",
+        "password": "rahulpass",
+        "location": "Salem",
+        "email": "rahul.mishra@example.com",
+        "view_orders": [],
+        "order_status": "pending",
+        "track_down": ["received order", "your meal is preparing", "meal depart", "10 mins to reach your destination", "delivered"]
+    },
+    {
+        "role": "delivery partner",
+        "name": "Neha Singh",
+        "password": "neha456",
+        "location": "Tiruppur",
+        "email": "neha.singh@example.com",
+        "view_orders": [],
+        "order_status": "pending",
+        "track_down": ["received order", "your meal is preparing", "meal depart", "10 mins to reach your destination", "delivered"]
+    },
+    {
+        "role": "delivery partner",
+        "name": "Amit Verma",
+        "password": "amitpass",
+        "location": "Erode",
+        "email": "amit.verma@example.com",
+        "view_orders": [],
+        "order_status": "pending",
+        "track_down": ["received order", "your meal is preparing", "meal depart", "10 mins to reach your destination", "delivered"]
+    },
+    {
+        "role": "delivery partner",
+        "name": "Sneha Reddy",
+        "password": "sneha789",
+        "location": "Tirunelveli",
+        "email": "sneha.reddy@example.com",
+        "view_orders": [],
+        "order_status": "pending",
+        "track_down": ["received order", "your meal is preparing", "meal depart", "10 mins to reach your destination", "delivered"]
+    },
+    {
+        "role": "delivery partner",
+        "name": "Arun Kumar",
+        "password": "arunpass",
+        "location": "Vellore",
+        "email": "arun.kumar@example.com",
+        "view_orders": [],
+        "order_status": "pending",
+        "track_down": ["received order", "your meal is preparing", "meal depart", "10 mins to reach your destination", "delivered"]
+    },
+    {
+        "role": "delivery partner",
+        "name": "Divya Sharma",
+        "password": "divyapass",
+        "location": "Thanjavur",
+        "email": "divya.sharma@example.com",
+        "view_orders": [],
+        "order_status": "pending",
+        "track_down": ["received order", "your meal is preparing", "meal depart", "10 mins to reach your destination", "delivered"]
+    }
+]

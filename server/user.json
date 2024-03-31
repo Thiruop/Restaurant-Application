@@ -1,0 +1,395 @@
+[
+    {
+        "name": "Thiru",
+        "role": "Admin",
+        "location": "Coimbatore",
+        "password": "thiru123",
+        "email": "thiru@foodiefinds.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Sneha",
+        "role": "Admin",
+        "location": "Coimbatore",
+        "password": "sneha456",
+        "email": "sneha@foodiefinds.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Kavin",
+        "role": "Admin",
+        "location": "Coimbatore",
+        "password": "kavin789",
+        "email": "kavin@foodiefinds.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Ikyatha",
+        "role": "Admin",
+        "location": "Coimbatore",
+        "password": "ikyatha101",
+        "email": "ikyatha@foodiefinds.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Shyam",
+        "role": "Admin",
+        "location": "Coimbatore",
+        "password": "shyam2022",
+        "email": "shyam@foodiefinds.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Kavin",
+        "role": "Restaurant Owner",
+        "location": "Trichy",
+        "password": "password1",
+        "email": "kavin@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Kumar",
+        "role": "Restaurant Owner",
+        "location": "Thanjore",
+        "password": "password2",
+        "email": "kumar@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Thiru",
+        "role": "Restaurant Owner",
+        "location": "Chennai",
+        "password": "password3",
+        "email": "thiru@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Kishore",
+        "role": "Restaurant Owner",
+        "location": "Trichy",
+        "password": "password4",
+        "email": "kishore@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Akshan",
+        "role": "Restaurant Owner",
+        "location": "Chennai",
+        "password": "password5",
+        "email": "akshan@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Rathesh",
+        "role": "Restaurant Owner",
+        "location": "Chennai",
+        "password": "password6",
+        "email": "rathesh@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Sham",
+        "role": "Restaurant Owner",
+        "location": "Coimbatore",
+        "password": "password7",
+        "email": "sham@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Jeevan",
+        "role": "Restaurant Owner",
+        "location": "Trichy",
+        "password": "password8",
+        "email": "jeevan@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Vignesh",
+        "role": "Restaurant Owner",
+        "location": "Trichy",
+        "password": "password9",
+        "email": "vignesh@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Absara",
+        "role": "Restaurant Owner",
+        "location": "Melaputhur",
+        "password": "password10",
+        "email": "absara@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "BBQ Haven",
+        "role": "Restaurant Owner",
+        "location": "Coimbatore",
+        "password": "password11",
+        "email": "bbq@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Authentic Tacos",
+        "role": "Restaurant Owner",
+        "location": "Coimbatore",
+        "password": "password12",
+        "email": "tacos@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Vietnamese Delight",
+        "role": "Restaurant Owner",
+        "location": "Coimbatore",
+        "password": "password13",
+        "email": "vietnamese@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Gourmet Sandwiches",
+        "role": "Restaurant Owner",
+        "location": "Coimbatore",
+        "password": "password14",
+        "email": "gourmet@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Arjun Patel",
+        "role": "Delivery Partner",
+        "location": "Chennai",
+        "password": "arjun123",
+        "email": "arjun.patel@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Kavya Gupta",
+        "role": "Delivery Partner",
+        "location": "Coimbatore",
+        "password": "kavyapass",
+        "email": "kavya.gupta@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Rajesh Kumar",
+        "role": "Delivery Partner",
+        "location": "Madurai",
+        "password": "rajesh456",
+        "email": "rajesh.kumar@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Ananya Singh",
+        "role": "Delivery Partner",
+        "location": "Trichy",
+        "password": "ananya789",
+        "email": "ananya.singh@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Vikram Sharma",
+        "role": "Delivery Partner",
+        "location": "Salem",
+        "password": "vikrampass",
+        "email": "vikram.sharma@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Nisha Reddy",
+        "role": "Delivery Partner",
+        "location": "Tiruppur",
+        "password": "nishapass",
+        "email": "nisha.reddy@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Suresh Verma",
+        "role": "Delivery Partner",
+        "location": "Erode",
+        "password": "suresh456",
+        "email": "suresh.verma@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Shreya Singh",
+        "role": "Delivery Partner",
+        "location": "Tirunelveli",
+        "password": "shreyapass",
+        "email": "shreya.singh@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Ganesh Kumar",
+        "role": "Delivery Partner",
+        "location": "Vellore",
+        "password": "ganeshpass",
+        "email": "ganesh.kumar@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Isha Gupta",
+        "role": "Delivery Partner",
+        "location": "Thanjavur",
+        "password": "ishapass",
+        "email": "isha.gupta@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Ravi Kumar",
+        "role": "Delivery Partner",
+        "location": "Chennai",
+        "password": "ravi123",
+        "email": "ravi.kumar@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Priya Sharma",
+        "role": "Delivery Partner",
+        "location": "Coimbatore",
+        "password": "priya456",
+        "email": "priya.sharma@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Vijay Patel",
+        "role": "Delivery Partner",
+        "location": "",
+        "password": "vijaypass",
+        "email": "vijay.patel@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Deepika Gupta",
+        "role": "Delivery Partner",
+        "location": "Trichy",
+        "password": "deepika789",
+        "email": "deepika.gupta@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Rahul Mishra",
+        "role": "Delivery Partner",
+        "location": "Salem",
+        "password": "rahulpass",
+        "email": "rahul.mishra@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Neha Singh",
+        "role": "Delivery Partner",
+        "location": "Tiruppur",
+        "password": "neha456",
+        "email": "neha.singh@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Amit Verma",
+        "role": "Delivery Partner",
+        "location": "Erode",
+        "password": "amitpass",
+        "email": "amit.verma@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Sneha Reddy",
+        "role": "Delivery Partner",
+        "location": "Tirunelveli",
+        "password": "sneha789",
+        "email": "sneha.reddy@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Arun Kumar",
+        "role": "Delivery Partner",
+        "location": "Vellore",
+        "password": "arunpass",
+        "email": "arun.kumar@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    },
+    {
+        "name": "Divya Sharma",
+        "role": "Delivery Partner",
+        "location": "Thanjavur",
+        "password": "divyapass",
+        "email": "divya.sharma@example.com",
+        "order_item": [],
+        "payment": 0,
+        "bucket_list": []
+    }
+
+
+]
+

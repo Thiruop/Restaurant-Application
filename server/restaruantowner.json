@@ -1,0 +1,156 @@
+[
+    {
+        "role": "Restaurant Owner",
+        "name": "Kavin",
+        "password": "password1",
+        "email": "kavin@example.com",
+        "restaurant_id": "1",
+        "restaurant_name": "Delicious Delights",
+        "location": "Trichy",
+        "availability": "open",
+        "issues": []
+    },
+    {
+        "role": "Restaurant Owner",
+        "name": "Kumar",
+        "password": "password2",
+        "email": "kumar@example.com",
+        "restaurant_id": "2",
+        "restaurant_name": "KFC",
+        "location": "Thanjore",
+        "availability": "open",
+        "issues": []
+    },
+    {
+        "role": "Restaurant Owner",
+        "name": "Thiru",
+        "password": "password3",
+        "email": "thiru@example.com",
+        "restaurant_id": "3",
+        "restaurant_name": "A2B",
+        "location": "Chennai",
+        "availability": "open",
+        "issues": []
+    },
+    {
+        "role": "Restaurant Owner",
+        "name": "Kishore",
+        "password": "password4",
+        "email": "kishore@example.com",
+        "restaurant_id": "4",
+        "restaurant_name": "Tasty Burgers",
+        "location": "Trichy",
+        "availability": "open",
+        "issues": []
+    },
+    {
+        "role": "Restaurant Owner",
+        "name": "Akshan",
+        "password": "password5",
+        "email": "akshan@example.com",
+        "restaurant_id": "5",
+        "restaurant_name": "Pasta Paradise",
+        "location": "Chennai",
+        "availability": "open",
+        "issues": []
+    },
+    {
+        "role": "Restaurant Owner",
+        "name": "Rathesh",
+        "password": "password6",
+        "email": "rathesh@example.com",
+        "restaurant_id": "6",
+        "restaurant_name": "BBQ Haven",
+        "location": "Chennai",
+        "availability": "open",
+        "issues": []
+    },
+    {
+        "role": "Restaurant Owner",
+        "name": "Sham",
+        "password": "password7",
+        "email": "sham@example.com",
+        "restaurant_id": "7",
+        "restaurant_name": "Vietnamese Delight",
+        "location": "Coimbatore",
+        "availability": "open",
+        "issues": []
+    },
+    {
+        "role": "Restaurant Owner",
+        "name": "Jeevan",
+        "password": "password8",
+        "email": "jeevan@example.com",
+        "restaurant_id": "8",
+        "restaurant_name": "Gourmet Sandwiches",
+        "location": "Trichy",
+        "availability": "open",
+        "issues": []
+    },
+    {
+        "role": "Restaurant Owner",
+        "name": "Vignesh",
+        "password": "password9",
+        "email": "vignesh@example.com",
+        "restaurant_id": "9",
+        "restaurant_name": "Tasty Tacos",
+        "location": "Trichy",
+        "availability": "open",
+        "issues": []
+    },
+    {
+        "role": "Restaurant Owner",
+        "name": "Absara",
+        "password": "password10",
+        "email": "absara@example.com",
+        "restaurant_id": "10",
+        "restaurant_name": "Vegetarian Haven",
+        "location": "Melaputhur",
+        "availability": "open",
+        "issues": []
+    },
+    {
+        "role": "Restaurant Owner",
+        "name": "BBQ Haven",
+        "password": "password11",
+        "email": "bbq@example.com",
+        "restaurant_id": "11",
+        "restaurant_name": "Thai Spice",
+        "location": "Coimbatore",
+        "availability": "open",
+        "issues": []
+    },
+    {
+        "role": "Restaurant Owner",
+        "name": "Authentic Tacos",
+        "password": "password12",
+        "email": "tacos@example.com",
+        "restaurant_id": "12",
+        "restaurant_name": "Taco Treat",
+        "location": "Coimbatore",
+        "availability": "open",
+        "issues": []
+    },
+    {
+        "role": "Restaurant Owner",
+        "name": "Vietnamese Delight",
+        "password": "password13",
+        "email": "vietnamese@example.com",
+        "restaurant_id": "13",
+        "restaurant_name": "Seafood Shack",
+        "location": "Coimbatore",
+        "availability": "open",
+        "issues": []
+    },
+    {
+        "role": "Restaurant Owner",
+        "name": "Gourmet Sandwiches",
+        "password": "password14",
+        "email": "gourmet@example.com",
+        "restaurant_id": "14",
+        "restaurant_name": "Vegan Delight",
+        "location": "Coimbatore",
+        "availability": "open",
+        "issues": []
+    }
+]
