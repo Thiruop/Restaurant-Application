@@ -3,7 +3,7 @@
         "role": "delivery partner",
         "name": "Arjun Patel",
         "password": "arjun123",
-        "location": "Chennai",
+        "location": "Trichy",
         "email": "arjun.patel@example.com",
         "view_orders": []
     },
@@ -11,7 +11,7 @@
         "role": "delivery partner",
         "name": "Kavya Gupta",
         "password": "kavyapass",
-        "location": "Coimbatore",
+        "location": "Melaputhur",
         "email": "kavya.gupta@example.com",
         "view_orders": []
     },
@@ -19,7 +19,7 @@
         "role": "delivery partner",
         "name": "Rajesh Kumar",
         "password": "rajesh456",
-        "location": "Madurai",
+        "location": "Boomudi",
         "email": "rajesh.kumar@example.com",
         "view_orders": []
     },
@@ -27,7 +27,7 @@
         "role": "delivery partner",
         "name": "Ananya Singh",
         "password": "ananya789",
-        "location": "Trichy",
+        "location": "Kodumudi",
         "email": "ananya.singh@example.com",
         "view_orders": []
     },
@@ -43,7 +43,7 @@
         "role": "delivery partner",
         "name": "Nisha Reddy",
         "password": "nishapass",
-        "location": "Tiruppur",
+        "location": "Chennai",
         "email": "nisha.reddy@example.com",
         "view_orders": []
     },
@@ -51,7 +51,7 @@
         "role": "delivery partner",
         "name": "Suresh Verma",
         "password": "suresh456",
-        "location": "Erode",
+        "location": "Kodaikanal",
         "email": "suresh.verma@example.com",
         "view_orders": []
     },
@@ -59,7 +59,7 @@
         "role": "delivery partner",
         "name": "Shreya Singh",
         "password": "shreyapass",
-        "location": "Tirunelveli",
+        "location": "Tambaram",
         "email": "shreya.singh@example.com",
         "view_orders": []
     },
@@ -67,7 +67,7 @@
         "role": "delivery partner",
         "name": "Ganesh Kumar",
         "password": "ganeshpass",
-        "location": "Vellore",
+        "location": "Namakal",
         "email": "ganesh.kumar@example.com",
         "view_orders": []
     },
@@ -75,7 +75,7 @@
         "role": "delivery partner",
         "name": "Isha Gupta",
         "password": "ishapass",
-        "location": "Thanjavur",
+        "location": "Madurai",
         "email": "isha.gupta@example.com",
         "view_orders": []
     },
@@ -83,7 +83,7 @@
         "role": "delivery partner",
         "name": "Ravi Kumar",
         "password": "ravi123",
-        "location": "Chennai",
+        "location": "Erode",
         "email": "ravi.kumar@example.com",
         "view_orders": []
     },
@@ -99,7 +99,7 @@
         "role": "delivery partner",
         "name": "Vijay Patel",
         "password": "vijaypass",
-        "location": "Trichy",
+        "location": "Kanyakumari",
         "email": "vijay.patel@example.com",
         "view_orders": []
     },
@@ -107,7 +107,7 @@
         "role": "delivery partner",
         "name": "Deepika Gupta",
         "password": "deepika789",
-        "location": "Trichy",
+        "location": "Mettur",
         "email": "deepika.gupta@example.com",
         "view_orders": []
     },
@@ -115,7 +115,7 @@
         "role": "delivery partner",
         "name": "Rahul Mishra",
         "password": "rahulpass",
-        "location": "Salem",
+        "location": "Ooty",
         "email": "rahul.mishra@example.com",
         "view_orders": []
     },
@@ -123,7 +123,7 @@
         "role": "delivery partner",
         "name": "Neha Singh",
         "password": "neha456",
-        "location": "Tiruppur",
+        "location": "Palani",
         "email": "neha.singh@example.com",
         "view_orders": []
     },
@@ -139,7 +139,7 @@
         "role": "delivery partner",
         "name": "Sneha Reddy",
         "password": "sneha789",
-        "location": "Tirunelveli",
+        "location": "Ooty",
         "email": "sneha.reddy@example.com",
         "view_orders": []
     },
@@ -147,7 +147,7 @@
         "role": "delivery partner",
         "name": "Arun Kumar",
         "password": "arunpass",
-        "location": "Vellore",
+        "location": "Mettur",
         "email": "arun.kumar@example.com",
         "view_orders": []
     },
@@ -155,7 +155,7 @@
         "role": "delivery partner",
         "name": "Divya Sharma",
         "password": "divyapass",
-        "location": "Thanjavur",
+        "location": "Palani",
         "email": "divya.sharma@example.com",
         "view_orders": []
     }

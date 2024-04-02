@@ -1,4 +1,4 @@
-import { Registration, Login, Main,UpdateOrders, GetUser,UpdateOrder,RemoveDishBucketList, UpdateUser,BucketList,Worker,ClearBucketList ,ReceivedOrders} from "../Controller/authController.js";
+import { Registration, Login, Main,UpdateOrders,AdminViewUsers,AdminUserOrders, GetUser,UpdateOrder,RemoveDishBucketList, UpdateUser,BucketList,Worker,ClearBucketList ,ReceivedOrders} from "../Controller/authController.js";
 import { authenticateUser } from "../Middleware/authMiddleware.js";
 import express from "express";
 const router = express.Router();
@@ -16,5 +16,7 @@ router.post("/clear",authenticateUser,ClearBucketList)
 router.delete("/bucketlist/:dishName",authenticateUser,RemoveDishBucketList);
 router.get("/deliveryorders",ReceivedOrders);
 router .put("/orders",UpdateOrders);
+router.get("/users",AdminViewUsers);
+router.get("/admin/userorders",AdminUserOrders);
 
 export default router;

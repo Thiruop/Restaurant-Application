@@ -6,10 +6,7 @@
       "location": "Trichy",
       "ratings": "4.5",
       "votes": "78800",
-      "restaurant_status": {
-        "type": "String",
-        "default": "open"
-      },
+      "availability": "open",
       "dishes": [
         {
           "dish_id": "1",
@@ -121,6 +118,7 @@
         "location": "Melaputhur",
         "ratings": "4.2",
         "votes": "6756",
+        "availability": "open",
         "dishes": [
           {
             "dish_id": "1",
@@ -199,9 +197,10 @@
         "restaurant_id": "3",
         "restaurant_name": "A2B",
         "restaurant_image": "https://img.freepik.com/premium-photo/restaurant_23-2148014999.jpg?w=900",
-        "location": "Melaputhur",
+        "location": "Boomudi",
         "ratings": "4.0",
         "votes": "45800",
+        "availability": "open",
         "dishes": [
           {
             "dish_id": "1",
@@ -277,9 +276,10 @@
                 "restaurant_id": "4",
                 "restaurant_name": "Tasty Burgers",
                 "restaurant_image": "https://www.freepik.com/premium-photo/sea-view-from-restaurant-sea-breakfast-beach-village-cafe_22069258.htm#fromView=search&page=1&position=17&uuid=55d66338-452e-471a-8051-152dfc40502c",
-                "location": "Trichy",
+                "location": "Kodumudi",
                 "ratings": "4.5",
                 "votes": "57800",
+                "availability": "open",
                 "dishes": [
                   {
                     "dish_id": "1",
@@ -332,6 +332,7 @@
                 "location": "Chennai",
                 "ratings": "4.5",
                 "votes": "78560",
+                "availability": "open",
                 "dishes": [
                   {
                     "dish_id": "1",
@@ -391,9 +392,10 @@
                 "restaurant_id": "6",
                 "restaurant_name": "Sushi Sensation",
                 "restaurant_image": "https://img.freepik.com/free-photo/restaurant-open-space-new-concept_140725-7438.jpg?w=740",
-                "location": "Chennai",
+                "location": "Kodaikanal",
                 "ratings": "2.5",
                 "votes": "45800",
+                "availability": "open",
                 "dishes": [
                   {
                     "dish_id": "1",
@@ -455,6 +457,7 @@
                 "location": "Tambaram",
                 "ratings": "4.1",
                 "votes": "48800",
+                "availability": "open",
                 "dishes": [
                   {
                     "dish_id": "1",
@@ -543,9 +546,10 @@
                 "restaurant_id": "8",
                 "restaurant_name": "BBQ Haven",
                 "restaurant_image": "https://img.freepik.com/premium-photo/cozy-restaurant-with-people-waiter_175935-230.jpg?w=900",
-                "location": "Tambaram",
+                "location": "Namakal",
                 "ratings": "3.5",
                 "votes": "67900",
+                "availability": "open",
                 "dishes": [
                   {
                     "dish_id": "1",
@@ -654,9 +658,10 @@
                 "restaurant_id": "9",
                 "restaurant_name": "Authentic Tacos",
                 "restaurant_image": "https://img.freepik.com/premium-photo/restaurant-with-table-with-many-menus-it_421632-20463.jpg?w=740",
-                "location": "Trichy",
+                "location": "Salem",
                 "ratings": "4.1",
                 "votes": "71200",
+                "availability": "open",
                 "dishes": [
                   {
                     "dish_id": "1",
@@ -764,9 +769,10 @@
                 "restaurant_id": "10",
                 "restaurant_name": "Vietnamese Delight",
                 "restaurant_image": "https://img.freepik.com/premium-photo/image-wooden-table-front-young-friends-having-fun-drinking_724662-1312.jpg?w=360",
-                "location": "Melaputhur",
+                "location": "Madurai",
                 "ratings": "2.5",
                 "votes": "23800",
+                "availability": "open",
                 "dishes": [
                   {
                     "dish_id": "1",
@@ -886,9 +892,10 @@
     "restaurant_id": "11",
     "restaurant_name": "Mediterranean Grill",
     "restaurant_image": "https://img.freepik.com/premium-photo/cozy-modern-interior-restaurant-teahouse-with-white-projector-screen_267395-1369.jpg?w=900",
-    "location": "Trichy",
+    "location": "Erode",
     "ratings": "4.5",
     "votes": "29800",
+    "availability": "open",
     "dishes": [
       {
         "dish_id": "1",
@@ -954,6 +961,7 @@
     "location": "Coimbatore",
     "ratings": "4.1",
     "votes": "78380",
+    "availability": "open",
     "dishes": [
       {
         "dish_id": "1",
@@ -1176,9 +1184,10 @@
     "restaurant_id": "13",
     "restaurant_name": "Gourmet Sandwiches",
     "restaurant_image": "https://img.freepik.com/free-photo/restaurant-interior_1127-3392.jpg?t=st=1711454992~exp=1711458592~hmac=2ca201b5aeefc01040c2ba383e8a8aec88b10c0489b119667da0dc5776a1b2cb&w=826",
-    "location": "Coimbatore",
+    "location": "Kanyakumari",
     "ratings": "4.8",
     "votes": "98800",
+    "availability": "open",
     "dishes": [
       {
         "dish_id": "1",
@@ -1263,12 +1272,13 @@
     ]
   },
   {
-    "restaurant_id": "13",
-    "restaurant_name": "Gourmet Sandwiches",
+    "restaurant_id": "14",
+    "restaurant_name": "Mettur Foreigners",
     "restaurant_image": "https://img.freepik.com/free-photo/restaurant-interior_1127-3392.jpg?t=st=1711454992~exp=1711458592~hmac=2ca201b5aeefc01040c2ba383e8a8aec88b10c0489b119667da0dc5776a1b2cb&w=826",
-    "location": "Coimbatore",
+    "location": "Mettur",
     "ratings": "4.8",
     "votes": "98800",
+    "availability": "open",
     "dishes": [
       {
         "dish_id": "1",
@@ -1354,12 +1364,13 @@
   }
   ,
   {
-    "restaurant_id": "14",
-    "restaurant_name": "Seafood Shack",
+    "restaurant_id": "15",
+    "restaurant_name": "Sea Foods",
     "restaurant_image": "https://img.freepik.com/premium-photo/interior-view-hotel-chefchaouen-blue-city-morocco_69593-6756.jpg?w=900",
-    "location": "Coimbatore",
+    "location": "Ooty",
     "ratings": "3.8",
     "votes": "75800",
+    "availability": "open",
     "dishes": [
       {
         "dish_id": "1",
@@ -1515,12 +1526,13 @@
     }
     ,
     {
-        "restaurant_id": "15",
+        "restaurant_id": "16",
         "restaurant_name": "Vegetarian Haven",
         "restaurant_image": "https://img.freepik.com/free-photo/restaurant-hall-classic-style-with-green-wooden-chairs-curtains_140725-8026.jpg?t=st=1711454921~exp=1711458521~hmac=46ca62d52248316e7b278ea3697520da1f7818ecbccfa27a6729f5c6e66cdd8e&w=900",
-        "location": "Coimbatore",
+        "location": "Palani",
         "ratings": "4.5",
         "votes": "78800",
+        "availability": "open",
         "dishes": [
           {
             "dish_id": "1",

@@ -266,7 +266,6 @@ export const UpdateOrders = async (req, res) => {
     try {
         const { orders } = req.body;
 
-        // Update orders for delivery partners
         for (const order of orders) {
             const updatedPartner = await Partner.findOneAndUpdate(
                 { 'view_orders._id': order._id },
@@ -293,7 +292,7 @@ export const UpdateOrders = async (req, res) => {
         };
 
         const options = {
-            arrayFilters: [{ 'elem.username': { $exists: true } }] // Match array elements with username (assuming it exists)
+            arrayFilters: [{ 'elem.username': { $exists: true } }]
         };
 
         const admins = await Admin.find(filter);
@@ -307,3 +306,24 @@ export const UpdateOrders = async (req, res) => {
         res.status(500).json({ error: 'An error occurred while updating orders' });
     }
 };
+export const AdminViewUsers=async(req,res)=>{
+    try {
+        const users = await Member.find();
+        res.status(200).json(users);
+    } catch (error) {
+        console.error('Error fetching user details:', error);
+        res.status(500).json({ error: 'An error occurred while fetching user details' });
+    }
+}
+export const AdminUserOrders=async (req, res) => {
+    try {
+      const admin = await Admin.findOne({ role: 'Admin' });
+      if (!admin) {
+        return res.status(404).json({ message: 'Admin not found' });
+      }
+      res.status(200).json({ view_orders: admin.view_orders });
+    } catch (error) {
+      console.error(error);
+      res.status(500).json({ message: 'Server Error' });
+    }
+  };

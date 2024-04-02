@@ -106,7 +106,7 @@ const Home = () => {
                             <p>Location: {restaurant.location}</p>
                             <p>Rating: {restaurant.ratings}</p>
                             <p>Votes: {restaurant.votes}</p>
-                            <p>Status: {restaurant.restaurant_status}</p>
+                            <p>Status: {restaurant.availability}</p>
                         </div>
                     ))}
                 </div>

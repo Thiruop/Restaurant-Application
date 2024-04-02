@@ -47,6 +47,9 @@ const UserSchema = new Schema({
             }
         ],
         default: []
+    },track_down:{
+        type:String,
+        default:"Order Received"
     }
 });
 
@@ -57,7 +60,7 @@ const RestaurantSchema = new Schema({
     location: String,
     ratings: String,
     votes: String,
-    restaurant_status: {
+    availability: {
         type: String,
         default: "open"
     },
@@ -75,7 +78,7 @@ const RestaurantSchema = new Schema({
                 description: String
             }
         }
-    ]
+    ],
 });
 
 const RestaurantOwnerSchema = new Schema({
@@ -93,10 +96,15 @@ const RestaurantOwnerSchema = new Schema({
         type: String,
         default: "open"
     },
-    issues: {
-        type: Array,
-        default: []
-    }
+    issues:{ 
+        type:[{
+        name:String,
+        restaurant_name:String,
+        issue:String   
+    }],
+    default:[]
+}
+
 });
 
 const AdminSchema = new Schema({
@@ -125,10 +133,15 @@ const AdminSchema = new Schema({
             }
         ],
         default: []
-    },issues: {
-        type: Array,
-        default: []
-    }
+    },
+    issues:{ 
+        type:[{
+        name:String,
+        restaurant_name:String,
+        issue:String   
+    }],
+    default:[]
+}
 });
 
 const DeliveryPartnerSchema = new Schema({

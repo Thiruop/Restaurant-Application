@@ -36,25 +36,24 @@ const DeliveryPartner = () => {
     setViewOrders(updatedOrders);
   };
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (index) => {
     try {
-      const updatedOrders = viewOrders.map(order => ({
-        _id: order._id,
-        track_down: order.track_down,
-        order_status: order.order_status,
-        username:order.username,
-        dish_name:order.dish_name,
-        restaurant_name:order.restaurant_name
-
-        
-        
-      }));
-      await axios.put(`http://localhost:3000/api/orders`, { email, orders: updatedOrders });
-      console.log("Orders updated successfully");
+      const updatedOrder = viewOrders[index];
+      const updatedData = {
+        _id: updatedOrder._id,
+        track_down: updatedOrder.track_down,
+        order_status: updatedOrder.order_status,
+        username: updatedOrder.username,
+        dish_name: updatedOrder.dish_name,
+        restaurant_name: updatedOrder.restaurant_name
+      };
+      await axios.put(`http://localhost:3000/api/orders`, { email, orders: [updatedData] });
+      console.log({email, orders: [updatedData]});
     } catch (error) {
-      console.error("Error updating orders:", error);
+      console.error("Error updating order:", error);
     }
   };
+  
 
   return (
     <div>
@@ -62,6 +61,7 @@ const DeliveryPartner = () => {
       {error ? (
         <p>{error}</p>
       ) : (
+        <div>
         <div>
           <table>
             <thead>
@@ -103,15 +103,17 @@ const DeliveryPartner = () => {
                       onChange={(e) => handleTrackDownChange(e, index)}
                     />
                   </td>
-                  <td><button onClick={handleSubmit}>Submit</button></td>
+                  <td><button onClick={()=>handleSubmit(index)}>Submit</button></td>
                 </tr>
               ))}
             </tbody>
           </table>
 
         </div>
+        </div>
       )}
     </div>
+    
   );
 };
 
