@@ -79,7 +79,7 @@ const BucketList = () => {
       await clearBucketList();
 
       alert(`Total Price: ${formattedTotalPrice}. Payment Successful!`);
-      navigate("/payment");
+      navigate("/trackdown");
     } catch (error) {
       console.error("Error processing payment:", error);
     }

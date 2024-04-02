@@ -25,12 +25,6 @@ const UserSchema = new Schema({
         ],
         default: []
     },
-    payment: {
-        type: Number,
-        default: 0
-    },track_down: {
-        type: Array,
-        default: []},
     bucket_list: {
         type: [
             {
@@ -47,10 +41,18 @@ const UserSchema = new Schema({
             }
         ],
         default: []
-    },track_down:{
-        type:String,
-        default:"Order Received"
-    }
+    },
+    track_down:{
+        type:[
+            {
+                restaurantname: String,
+                dishname: String,
+                trackdown:String,
+                orderstatus:String
+            }
+        ],
+        default: []
+    } 
 });
 
 const RestaurantSchema = new Schema({

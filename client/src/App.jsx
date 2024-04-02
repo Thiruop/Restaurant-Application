@@ -1,5 +1,5 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import {  Error, HomeLayout, Login,Register,Dish,OrderView,Home, BucketList, DeliveryPartner,Worker,Admin,Owner,AdminIssueView} from "./pages";
+import {  Error, HomeLayout, Login,Register,Dish,OrderView,Home, BucketList, DeliveryPartner,Worker,Admin,Owner,AdminIssueView, Trackdown} from "./pages";
 import 'bootstrap/dist/css/bootstrap.min.css';
 const router = createBrowserRouter([
   {
@@ -14,6 +14,9 @@ const router = createBrowserRouter([
         path:"userorderview",
         element:<OrderView/>
 
+      },{
+        path:"trackdown",
+        element:<Trackdown/>
       },{
         path:"adminissueview",
         element:<AdminIssueView/>

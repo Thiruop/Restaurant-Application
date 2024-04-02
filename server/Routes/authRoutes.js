@@ -1,4 +1,4 @@
-import { Registration, Login, Main,UpdateOrders,AdminViewUsers,AdminUserOrders, GetUser,UpdateOrder,RemoveDishBucketList, UpdateUser,BucketList,Worker,ClearBucketList ,ReceivedOrders} from "../Controller/authController.js";
+import { Registration, Login, Main,UpdateOrders,AdminViewUsers,AdminUserOrders,DeleteTrackDown, GetUser,UpdateOrder,RemoveDishBucketList, UpdateUser,BucketList,Worker,ClearBucketList ,ReceivedOrders} from "../Controller/authController.js";
 import { authenticateUser } from "../Middleware/authMiddleware.js";
 import express from "express";
 const router = express.Router();
@@ -18,5 +18,6 @@ router.get("/deliveryorders",ReceivedOrders);
 router .put("/orders",UpdateOrders);
 router.get("/users",AdminViewUsers);
 router.get("/admin/userorders",AdminUserOrders);
+router.put("/deletetrackdown",authenticateUser,DeleteTrackDown);
 
 export default router;

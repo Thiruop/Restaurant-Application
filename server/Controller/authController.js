@@ -147,24 +147,18 @@ export const UpdateUser =async(req,res)=>{
 export const UpdateOrder = async (req, res) => {
     try {
         const { email, order_item } = req.body;
-
-        // Update order_item for the user
         const user = await Member.findOne({ email });
         if (!user) {
             return res.status(404).json({ message: "User not found" });
         }
         user.order_item.push(...order_item);
         await user.save();
-
-        // Update view_orders for matching delivery partners
         const restaurantLocation = order_item[0].location;
         const matchingDeliveryPartners = await Partner.find({ location: restaurantLocation });
         for (const partner of matchingDeliveryPartners) {
             partner.view_orders.push(...order_item);
             await partner.save();
         }
-
-        // Update order_item for each admin
         const admins = await Admin.find();
         for (const admin of admins) {
             admin.view_orders.push(...order_item);
@@ -266,10 +260,11 @@ export const UpdateOrders = async (req, res) => {
     try {
         const { orders } = req.body;
 
+        // Update orders for delivery partners
         for (const order of orders) {
             const updatedPartner = await Partner.findOneAndUpdate(
                 { 'view_orders._id': order._id },
-                { $set: { 'view_orders.$.track_down': order.track_down, 'view_orders.$.order_status': order.order_status } },
+                { $set: { 'view_orders.$.track_down': order.track_down } }, // Only update track_down field
                 { new: true }
             );
             if (!updatedPartner) {
@@ -277,35 +272,66 @@ export const UpdateOrders = async (req, res) => {
             }
         }
 
-        // Update orders for all admin users
-        const filter = {
-            'view_orders.username': { $exists: true }, // Ensure only admin users are matched
+        // Update orders for admins
+        const adminFilter = {
+            'view_orders.username': { $exists: true }, 
             'view_orders.dish_name': { $exists: true },
             'view_orders.restaurant_name': { $exists: true }
         };
 
-        const update = {
+        const adminUpdate = {
             $set: {
-                'view_orders.$[elem].track_down': orders[0].track_down, // Assuming all orders have the same track_down
-                'view_orders.$[elem].order_status': orders[0].order_status // Assuming all orders have the same order_status
+                'view_orders.$[elem].track_down': orders[0].track_down, // Only update track_down field
+                'view_orders.$[elem].dish_name': orders[0].dish_name, // Include dish_name field
+                'view_orders.$[elem].restaurant_name': orders[0].restaurant_name // Include restaurant_name field
             }
         };
 
-        const options = {
+        const adminOptions = {
             arrayFilters: [{ 'elem.username': { $exists: true } }]
         };
 
-        const admins = await Admin.find(filter);
-        for (const admin of admins) {
-            await Admin.findOneAndUpdate(filter, update, options);
+        await Admin.updateMany(adminFilter, adminUpdate, adminOptions);
+
+        // Update orders for members
+        for (const order of orders) {
+            const filter = { name: order.username };
+
+            const existingEntry = await Member.findOne(filter);
+
+            if (existingEntry) {
+                // Check if the track_down array contains an entry with the same restaurantname and dishname
+                const existingIndex = existingEntry.track_down.findIndex(entry => entry.restaurantname === order.restaurant_name && entry.dishname === order.dish_name);
+
+                if (existingIndex !== -1) {
+                    // If entry already exists, update orderstatus and trackdown
+                    existingEntry.track_down[existingIndex].orderstatus = order.order_status;
+                    existingEntry.track_down[existingIndex].trackdown = order.track_down;
+                } else {
+                    // If entry does not exist, add it
+                    existingEntry.track_down.push({
+                        restaurantname: order.restaurant_name,
+                        dishname: order.dish_name,
+                        trackdown: order.track_down,
+                        orderstatus: order.order_status
+                    });
+                }
+
+                await existingEntry.save();
+            } else {
+                // If member not found, return error
+                return res.status(404).json({ error: `Member with name ${order.username} not found` });
+            }
         }
-        
+
         res.status(200).json({ message: 'Orders updated successfully' });
     } catch (error) {
         console.error('Error updating orders:', error);
         res.status(500).json({ error: 'An error occurred while updating orders' });
     }
 };
+
+
 export const AdminViewUsers=async(req,res)=>{
     try {
         const users = await Member.find();
@@ -327,3 +353,34 @@ export const AdminUserOrders=async (req, res) => {
       res.status(500).json({ message: 'Server Error' });
     }
   };
+export const DeleteTrackDown=async (req, res) => {
+    try {
+        const { userName, restaurantName, dishName, orderStatus, trackDown } = req.body;
+
+        console.log(userName)
+        const user = await Member.findOne({ name: userName });
+        console.log(user)
+        if (!user) {
+            return res.status(404).json({ error: "User not found" });
+        }
+        const trackDownIndex = user.track_down.findIndex(entry => (
+            entry.restaurantname === restaurantName &&
+            entry.dishname === dishName &&
+            entry.orderstatus === orderStatus &&
+            entry.trackdown === trackDown
+        ));
+
+        if (trackDownIndex !== -1) {
+            user.track_down.splice(trackDownIndex, 1);
+            await user.save();
+            console.log("updated")
+        } else {
+            return res.status(404).json({ error: "Trackdown entry not found for the given parameters" });
+        }
+
+        res.status(200).json({ message: "Trackdown entry deleted successfully" });
+    } catch (error) {
+        console.error("Error deleting trackdown data:", error);
+        res.status(500).json({ error: "An error occurred while deleting trackdown data" });
+    }
+};
