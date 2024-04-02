@@ -74,18 +74,14 @@ const BucketList = () => {
           Authorization: `Bearer ${token}`
         }
       });
-      
+
       // Clear bucket list after successful payment
       await clearBucketList();
 
-      // Perform payment operation here
       alert(`Total Price: ${formattedTotalPrice}. Payment Successful!`);
-  
-      // Navigate to the payment page
       navigate("/payment");
     } catch (error) {
       console.error("Error processing payment:", error);
-      // Handle error appropriately, such as showing a message to the user
     }
   };
 
@@ -93,8 +89,6 @@ const BucketList = () => {
     try {
       const token = localStorage.getItem("token");
       const userEmail = localStorage.getItem("userEmail");
-
-      // Send request to clear the bucket list on the backend
       await axios.post("http://localhost:3000/api/clear", { email: userEmail }, {
         headers: {
           Authorization: `Bearer ${token}`
@@ -105,7 +99,6 @@ const BucketList = () => {
       setBucketList([]);
     } catch (error) {
       console.error("Error clearing bucket list:", error);
-      
     }
   };
 

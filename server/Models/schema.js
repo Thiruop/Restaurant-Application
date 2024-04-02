@@ -28,7 +28,9 @@ const UserSchema = new Schema({
     payment: {
         type: Number,
         default: 0
-    },
+    },track_down: {
+        type: Array,
+        default: []},
     bucket_list: {
         type: [
             {
@@ -105,10 +107,25 @@ const AdminSchema = new Schema({
     name: String,
     password: String,
     email: String,
-    issue: {
-        type: Array,
+    view_orders: {
+        type: [
+            {
+                username: String,
+                dish_name: String,
+                restaurant_name: String,
+                price: Number,
+                location: String,
+                order_status: {
+                    type: String,
+                    default: "pending"
+                },track_down:{
+                    type:String,
+                    default:"Order Received"
+                }
+            }
+        ],
         default: []
-    },track_down: {
+    },issues: {
         type: Array,
         default: []
     }
@@ -124,21 +141,20 @@ const DeliveryPartnerSchema = new Schema({
         type: [
             {
                 username: String,
-                order_name: String,
+                dish_name: String,
                 restaurant_name: String,
                 price: Number,
-                location: String
+                location: String,
+                order_status: {
+                    type: String,
+                    default: "pending"
+                },track_down:{
+                    type:String,
+                    default:"Order Received"
+                }
             }
         ],
         default: []
-    },
-    order_status: {
-        type: String,
-        default: "pending"
-    },
-    track_down: {
-        type: Array,
-        default: ["received order", "your meal is preparing", "meal depart", "10 mins to reach your destination", "delivered"]
     }
 });
 

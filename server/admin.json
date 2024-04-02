@@ -4,40 +4,39 @@
       "name": "Thiru",
       "password": "thiru123",
       "email": "thiru@foodiefinds.com",
-      "issue": [],
-      "track_down": []
+      "view_orders": [],
+      "issues": []
     },
     {
       "role": "Admin",
       "name": "Sneha",
       "password": "sneha456",
       "email": "sneha@foodiefinds.com",
-      "issue": [],
-      "track_down": []
+      "view_orders": [],
+      "issues": []
     },
     {
       "role": "Admin",
       "name": "Kavin",
       "password": "kavin789",
       "email": "kavin@foodiefinds.com",
-      "issue": [],
-      "track_down": []
+      "view_orders": []
     },
     {
       "role": "Admin",
       "name": "Ikyatha",
       "password": "ikyatha101",
       "email": "ikyatha@foodiefinds.com",
-      "issue": [],
-      "track_down": []
+      "view_orders": [],
+      "issues": []
     },
     {
       "role": "Admin",
       "name": "Shyam",
       "password": "shyam2022",
       "email": "shyam@foodiefinds.com",
-      "issue": [],
-      "track_down": []
+      "view_orders": [],
+      "issues": []
     }
   ]
   

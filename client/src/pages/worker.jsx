@@ -15,7 +15,10 @@ const Worker = () => {
     const navigate = useNavigate();
 
     const handleChange = (e) => {
-        setFormData({ ...formData, [e.target.name]: e.target.value });
+        setFormData((prevFormData) => ({
+            ...prevFormData,
+            [e.target.name]: e.target.value
+        }));
     };
 
     const handleSubmit = async (e) => {
@@ -23,12 +26,13 @@ const Worker = () => {
         try {
             const response = await axios.post("http://localhost:3000/api/worker", formData);
             const userData = response.data.user;
+            localStorage.setItem("userData", JSON.stringify(userData));
             if (formData.role === "Admin") {
-                navigate("/admin");
+                navigate("/admin", { state: { email: formData.email } });
             } else if (formData.role === "delivery partner") {
-                navigate("/deliverypartner");
+                navigate("/deliverypartner", { state: { email: formData.email } });
             } else if (formData.role === "Restaurant Owner") {
-                navigate("/owner");
+                navigate("/owner", { state: { email: formData.email } });
             }
         } catch (error) {
             setError("Login failed. Please check your credentials.");

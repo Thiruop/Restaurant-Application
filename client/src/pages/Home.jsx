@@ -18,10 +18,10 @@ const Home = () => {
             setUserEmail(storedEmail);
         }
         const token = localStorage.getItem("token");
-        if(token && !userName){ // Fetch user data only if token exists and username is not set
+        if(token && !userName){
             fetchUserData(token);
         }
-    }, [userName]); // Run the effect only when userName changes
+    }, [userName]); 
 
     const fetchUserData = async (token) => {
         try {

@@ -95,6 +95,7 @@ export const Worker = async(req,res)=>{
         try {
        
             const user = await Owner.findOne({email}).select('-password');
+            console.log(user)
     
             if (!user) {
                 return res.status(404).json({ message: "User not found" });
@@ -147,19 +148,28 @@ export const UpdateOrder = async (req, res) => {
     try {
         const { email, order_item } = req.body;
 
+        // Update order_item for the user
         const user = await Member.findOne({ email });
-
         if (!user) {
             return res.status(404).json({ message: "User not found" });
         }
         user.order_item.push(...order_item);
         await user.save();
-        const restaurantLocation = order_item[0].location; // Assuming the location is in the first order item
-    const matchingDeliveryPartners = await Partner.find({ location: restaurantLocation });
-    matchingDeliveryPartners.forEach(async (partner) => {
-        partner.view_orders.push(...order_item);
-        await partner.save();
-    })
+
+        // Update view_orders for matching delivery partners
+        const restaurantLocation = order_item[0].location;
+        const matchingDeliveryPartners = await Partner.find({ location: restaurantLocation });
+        for (const partner of matchingDeliveryPartners) {
+            partner.view_orders.push(...order_item);
+            await partner.save();
+        }
+
+        // Update order_item for each admin
+        const admins = await Admin.find();
+        for (const admin of admins) {
+            admin.view_orders.push(...order_item);
+            await admin.save();
+        }
 
         res.status(200).json({ message: "Order updated successfully" });
     } catch (error) {
@@ -225,7 +235,6 @@ export const ClearBucketList = async (req, res) => {
         return res.status(404).json({ message: "Item not found in the bucket list" });
       }
   
-      // Log dish name of the item to be removed
       console.log("Dish name to remove:", dishName);
       user.bucket_list.splice(indexToRemove, 1);
       await user.save();
@@ -237,3 +246,64 @@ export const ClearBucketList = async (req, res) => {
     }
   }
   
+  export const ReceivedOrders = async (req, res) => {
+    try {
+        const { email } =  req.query;
+
+        const deliveryPartner = await Partner.findOne({ email });
+
+        if (!deliveryPartner) {
+            return res.status(404).json({ message: "Delivery partner not found" });
+        }
+
+        res.status(200).json(deliveryPartner);
+    } catch (error) {
+        console.error("Error fetching delivery partner data:", error);
+        res.status(500).json({ message: "Internal server error" });
+    }
+};
+export const UpdateOrders = async (req, res) => {
+    try {
+        const { orders } = req.body;
+
+        // Update orders for delivery partners
+        for (const order of orders) {
+            const updatedPartner = await Partner.findOneAndUpdate(
+                { 'view_orders._id': order._id },
+                { $set: { 'view_orders.$.track_down': order.track_down, 'view_orders.$.order_status': order.order_status } },
+                { new: true }
+            );
+            if (!updatedPartner) {
+                return res.status(404).json({ error: `Delivery partner with order ID ${order._id} not found` });
+            }
+        }
+
+        // Update orders for all admin users
+        const filter = {
+            'view_orders.username': { $exists: true }, // Ensure only admin users are matched
+            'view_orders.dish_name': { $exists: true },
+            'view_orders.restaurant_name': { $exists: true }
+        };
+
+        const update = {
+            $set: {
+                'view_orders.$[elem].track_down': orders[0].track_down, // Assuming all orders have the same track_down
+                'view_orders.$[elem].order_status': orders[0].order_status // Assuming all orders have the same order_status
+            }
+        };
+
+        const options = {
+            arrayFilters: [{ 'elem.username': { $exists: true } }] // Match array elements with username (assuming it exists)
+        };
+
+        const admins = await Admin.find(filter);
+        for (const admin of admins) {
+            await Admin.findOneAndUpdate(filter, update, options);
+        }
+        
+        res.status(200).json({ message: 'Orders updated successfully' });
+    } catch (error) {
+        console.error('Error updating orders:', error);
+        res.status(500).json({ error: 'An error occurred while updating orders' });
+    }
+};
