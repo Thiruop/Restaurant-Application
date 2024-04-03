@@ -99,12 +99,8 @@ const RestaurantOwnerSchema = new Schema({
         default: "open"
     },
     issues:{ 
-        type:[{
-        name:String,
-        restaurant_name:String,
-        issue:String   
-    }],
-    default:[]
+       type:String,
+       default:"working well"
 }
 
 });
@@ -135,15 +131,7 @@ const AdminSchema = new Schema({
             }
         ],
         default: []
-    },
-    issues:{ 
-        type:[{
-        name:String,
-        restaurant_name:String,
-        issue:String   
-    }],
-    default:[]
-}
+    }
 });
 
 const DeliveryPartnerSchema = new Schema({

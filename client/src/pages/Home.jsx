@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 // added by ikyatha
-import "../assets/css/Restaurant.css"
+import "../assets/css/Restaurant.css";
 
 const Home = () => {
     const [userEmail, setUserEmail] = useState("");
@@ -61,6 +61,17 @@ const Home = () => {
             restaurant.location.toLowerCase().includes(searchTerm.toLowerCase()) ||
             restaurant.restaurant_status === "open"
         );
+        
+        // Sort filteredRestaurants based on availability
+        filtered.sort((a, b) => {
+            if (a.availability === "close" && b.availability === "open") {
+                return 1;
+            } else if (a.availability === "open" && b.availability === "close") {
+                return -1;
+            }
+            return 0;
+        });
+
         setFilteredRestaurants(filtered);
     }, [searchTerm, restaurants]);
 
@@ -71,8 +82,13 @@ const Home = () => {
     const handleRestaurantClick = (restaurant) => {
         const { location: restaurantLocation } = restaurant; 
         localStorage.setItem("restaurantLocation", restaurantLocation);
+        if(restaurant.availability==="close"){
+            navigate("/restauranterror")
+        }else{
+            navigate("/dish", { state: { restaurantData: restaurant } });
+        }
         
-        navigate("/dish", { state: { restaurantData: restaurant } });
+        
     };
 
     const handleLogout = () => {
@@ -81,7 +97,6 @@ const Home = () => {
         localStorage.removeItem('userName');
         navigate("/"); 
     };
-    
 
     return (
         <div>

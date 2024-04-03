@@ -8,7 +8,7 @@
         "restaurant_name": "Delicious Delights",
         "location": "Trichy",
         "availability": "open",
-        "issues": []
+        "issues": "working well"
     },
     {
         "role": "Restaurant Owner",
@@ -19,7 +19,7 @@
         "restaurant_name": "KFC",
         "location": "Melaputhur",
         "availability": "open",
-        "issues": []
+        "issues": "working well"
     },
     {
         "role": "Restaurant Owner",
@@ -30,7 +30,7 @@
         "restaurant_name": "A2B",
         "location": "Boomudi",
         "availability": "open",
-        "issues": []
+        "issues": "working well"
     },
     {
         "role": "Restaurant Owner",
@@ -41,7 +41,7 @@
         "restaurant_name": "Tasty Burgers",
         "location": "Kodumudi",
         "availability": "open",
-        "issues": []
+        "issues": "working well"
     },
     {
         "role": "Restaurant Owner",
@@ -52,7 +52,7 @@
         "restaurant_name": "Pizza Palace",
         "location": "Chennai",
         "availability": "open",
-        "issues": []
+        "issues": "working well"
     },
     {
         "role": "Restaurant Owner",
@@ -63,7 +63,7 @@
         "restaurant_name": "Sushi Sensation",
         "location": "Kodaikanal",
         "availability": "open",
-        "issues": []
+        "issues": "working well"
     },
     {
         "role": "Restaurant Owner",
@@ -74,7 +74,7 @@
         "restaurant_name": "Pasta Paradise",
         "location": "Tambaram",
         "availability": "open",
-        "issues": []
+        "issues": "working well"
     },
     {
         "role": "Restaurant Owner",
@@ -85,7 +85,7 @@
         "restaurant_name": "BBQ Haven",
         "location": "Namakal",
         "availability": "open",
-        "issues": []
+        "issues": "working well"
     },
     {
         "role": "Restaurant Owner",
@@ -96,7 +96,7 @@
         "restaurant_name": "Authentic Tacos",
         "location": "Salem",
         "availability": "open",
-        "issues": []
+        "issues": "working well"
     },
     {
         "role": "Restaurant Owner",
@@ -107,7 +107,7 @@
         "restaurant_name": "Vietnamese Delight",
         "location": "Madurai",
         "availability": "open",
-        "issues": []
+        "issues": "working well"
     },
     {
         "role": "Restaurant Owner",
@@ -118,7 +118,7 @@
         "restaurant_name": "Mediterranean Grill",
         "location": "Erode",
         "availability": "open",
-        "issues": []
+        "issues": "working well"
     },
     {
         "role": "Restaurant Owner",
@@ -129,7 +129,7 @@
         "restaurant_name": "Thai Spice",
         "location": "Coimbatore",
         "availability": "open",
-        "issues": []
+        "issues": "working well"
     },
     {
         "role": "Restaurant Owner",
@@ -140,7 +140,7 @@
         "restaurant_name": "Gourmet Sandwiches",
         "location": "Kanyakumari",
         "availability": "open",
-        "issues": []
+        "issues": "working well"
     },
     {
         "role": "Restaurant Owner",
@@ -151,7 +151,7 @@
         "restaurant_name": "Mettur Foreigners",
         "location": "Mettur",
         "availability": "open",
-        "issues": []
+        "issues": "working well"
     },{
         "role": "Restaurant Owner",
         "name": "Mani",
@@ -161,7 +161,7 @@
         "restaurant_name": "Sea Foods",
         "location": "Ooty",
         "availability": "open",
-        "issues": []
+        "issues": "working well"
     },{
         "role": "Restaurant Owner",
         "name": "Manju",
@@ -171,6 +171,6 @@
         "restaurant_name": "Vegetarian Haven",
         "location": "Palani",
         "availability": "open",
-        "issues": []
+        "issues":"working well"
     }
 ]

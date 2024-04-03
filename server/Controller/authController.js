@@ -300,11 +300,9 @@ export const UpdateOrders = async (req, res) => {
             const existingEntry = await Member.findOne(filter);
 
             if (existingEntry) {
-                // Check if the track_down array contains an entry with the same restaurantname and dishname
                 const existingIndex = existingEntry.track_down.findIndex(entry => entry.restaurantname === order.restaurant_name && entry.dishname === order.dish_name);
 
                 if (existingIndex !== -1) {
-                    // If entry already exists, update orderstatus and trackdown
                     existingEntry.track_down[existingIndex].orderstatus = order.order_status;
                     existingEntry.track_down[existingIndex].trackdown = order.track_down;
                 } else {
@@ -384,3 +382,73 @@ export const DeleteTrackDown=async (req, res) => {
         res.status(500).json({ error: "An error occurred while deleting trackdown data" });
     }
 };
+ 
+export const saveIssues = async (req, res) => {
+    try {
+        // Extract data from request body
+        const { email, availability, username, restaurant, issue } = req.body;
+        console.log(email)
+        console.log(availability)
+        console.log(username)
+        const owner = await Owner.findOne({ name: username });
+        console.log(owner)
+        
+        if (!owner) {
+            return res.status(404).json({ error: 'Restaurant owner not found' });
+        }
+       
+        if (availability) {
+            if (availability !== 'open' && availability !== 'close') {
+                return res.status(400).json({ error: 'Invalid availability value' });
+            }
+            owner.availability = availability;
+        }
+        
+        if (username && restaurant && issue) {
+            // Update the issues field
+            owner.issues = issue;
+        }
+    
+        
+        await owner.save();
+        const updaterestaurant = await Restaurant.findOneAndUpdate(
+            { restaurant_name: restaurant },
+            { availability: availability },
+            { new: true }
+        );
+
+        // Save the changes to the restaurant document
+        await updaterestaurant.save();
+        res.status(200).json({ message: 'Owner details updated successfully' });
+    } catch (error) {
+        console.error('Error updating owner details:', error);
+        res.status(500).json({ error: 'An error occurred while updating owner details' });
+    }
+};
+export const OwnerDetails=async (req, res) => {
+    try {
+        const { email } = req.query;
+        const owner = await Owner.findOne({ email });
+
+        if (!owner) {
+            return res.status(404).json({ error: "Owner not found" });
+        }
+        res.status(200).json(owner);
+    } catch (error) {
+        console.error("Error fetching owner details:", error);
+        res.status(500).json({ error: "An error occurred while fetching owner details" });
+    }
+};
+export const AdminIssues=async(req,res)=>{
+    try {
+ 
+        const owners = await Owner.find({});
+
+      
+        res.status(200).json(owners);
+    } catch (error) {
+        console.error('Error fetching availability and issues data:', error);
+        res.status(500).json({ error: 'An error occurred while fetching availability and issues data' });
+    }
+};
+

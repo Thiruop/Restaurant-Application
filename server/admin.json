@@ -4,16 +4,14 @@
       "name": "Thiru",
       "password": "thiru123",
       "email": "thiru@foodiefinds.com",
-      "view_orders": [],
-      "issues": []
+      "view_orders": []
     },
     {
       "role": "Admin",
       "name": "Sneha",
       "password": "sneha456",
       "email": "sneha@foodiefinds.com",
-      "view_orders": [],
-      "issues": []
+      "view_orders": []
     },
     {
       "role": "Admin",
@@ -27,16 +25,14 @@
       "name": "Ikyatha",
       "password": "ikyatha101",
       "email": "ikyatha@foodiefinds.com",
-      "view_orders": [],
-      "issues": []
+      "view_orders": []
     },
     {
       "role": "Admin",
       "name": "Shyam",
       "password": "shyam2022",
       "email": "shyam@foodiefinds.com",
-      "view_orders": [],
-      "issues": []
+      "view_orders": []
     }
   ]
   
