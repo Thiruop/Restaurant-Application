@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useLocation } from "react-router-dom";
+import "../assets/css/Owner.css";
 
 const Owner = () => {
     const location = useLocation();
@@ -47,6 +48,7 @@ const Owner = () => {
             });
             console.log("Data submitted successfully:", response.data);
             // Handle success, redirect or display a success message
+           // alert("sucess");
         } catch (error) {
             console.error("Error submitting data:", error);
             // Handle error, display an error message to the user
@@ -54,24 +56,26 @@ const Owner = () => {
     };
 
     return (
-        <div>
+        <div className="owner-container">
             <h1>Welcome Owner</h1>
             {error && <p>{error}</p>}
-            <p>Name: {ownerDetails.name}</p>
-            <p>Restaurant Name: {ownerDetails.restaurant_name}</p>
+            <div className="owner-info">
+                <h5><p style={{marginLeft:"100px"}}>Hi {ownerDetails.name}!</p></h5>
+                <h5><p>Restaurant Name: {ownerDetails.restaurant_name}</p></h5>
+            </div>
             <form onSubmit={handleSubmit}>
-                <div>
+                <div className="select-container">
                     <label>
-                        Availability:
+                        <h4>Availability:</h4>
                         <select value={availability} onChange={handleAvailabilityChange}>
                             <option value="open">Open</option>
                             <option value="close">Close</option>
                         </select>
                     </label>
                 </div>
-                <div>
+                <div className="issue-container">
                     <label>
-                        Issue:
+                        <h4>Issue:</h4>
                         <input type="text" value={issue} onChange={handleIssueChange} />
                     </label>
                 </div>
@@ -81,4 +85,4 @@ const Owner = () => {
     );
 };
 
-export default Owner;
+export default Owner;

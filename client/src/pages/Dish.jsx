@@ -2,15 +2,16 @@ import React, { useState, useEffect } from "react";
 import { useLocation, Link } from "react-router-dom";
 import axios from "axios";
 import "../assets/css/Dish.css";
-
+import { UserNav } from "../components";
+ 
 const Dish = () => {
   const location = useLocation();
   const restaurantData = location.state.restaurantData;
-
+ 
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(true);
   const [bucketList, setBucketList] = useState([]);
-
+ 
   useEffect(() => {
     const storedEmail = localStorage.getItem('userEmail');
     if (storedEmail) {
@@ -18,14 +19,14 @@ const Dish = () => {
     } else {
       setLoading(false);
     }
-  }, []); 
-
+  }, []);
+ 
   useEffect(() => {
     if (user) {
       setBucketList(user.bucket_list || []);
     }
   }, [user]);
-
+ 
   const fetchUserData = async () => {
     try {
       const token = localStorage.getItem("token");
@@ -41,18 +42,18 @@ const Dish = () => {
       setLoading(false);
     }
   };
-
+ 
   const addToBucketList = async (dish) => {
     try {
       const token = localStorage.getItem("token");
       if (!token) {
         throw new Error("User token not found");
       }
-
+ 
       if (!user) {
         throw new Error("User data not available");
       }
-
+ 
       const newBucketListItem = {
         restaurant_id: restaurantData.restaurant_id,
         restaurant_name: restaurantData.restaurant_name,
@@ -65,7 +66,7 @@ const Dish = () => {
           }
         ]
       };
-
+ 
       const response = await axios.put(`http://localhost:3000/api/update/edit/${user._id}`, {
         $push: { bucket_list: newBucketListItem }
       }, {
@@ -73,7 +74,7 @@ const Dish = () => {
           Authorization: `Bearer ${token}`
         }
       });
-
+ 
       if (response.status === 200) {
         alert("Dish added to bucket list!");
         setBucketList([...bucketList, newBucketListItem]);
@@ -85,34 +86,42 @@ const Dish = () => {
       alert("Error adding dish to bucket list. Please try again later.");
     }
   };
-
+ 
   if (loading) {
     return <p>Loading...</p>;
   }
-
+ 
   return (
     <div className="admin-con">
+       <nav className="navmain">
+              <div>
+                <h3><b>Dishes</b></h3>
+              </div>
+              <div>
+                    <UserNav  />
+
+                </div>
+       </nav> 
       <div className="container mt-4">
         {restaurantData.dishes.map((dish) => (
           <li key={dish.dish_id}>
             <div className="row">
               <div className="col-3">
-                <img src={dish.dish_image} alt={dish.dish_name} />
+                <img className="dishimg" src={dish.dish_image} alt={dish.dish_name} />
               </div>
               <div className="col">
                 <br />
-                <h2>DishName: {dish.dish_name}</h2>
+                <h5>DishName: {dish.dish_name}</h5>
                 <br />
-                <h4>Price: {dish.dish_price}</h4>
-                <br />
-                <br />
+                <h6>Price: {dish.dish_price}</h6>
                 <p>
-                  <b>Description: {dish.dish_detail.description}</b>
+                  Description: {dish.dish_detail.description}
                 </p>
                 <p>
-                  <b>Ingredients: {dish.dish_detail.ingredients.join(", ")}</b>
+                Ingredients: {dish.dish_detail.ingredients.join(", ")}
                 </p>
-                
+                <br>
+                </br>
                 <button className="bucketlist" onClick={() => addToBucketList(dish)}>Bucket List</button>
               </div>
             </div>
@@ -127,5 +136,5 @@ const Dish = () => {
     </div>
   );
 };
-
+ 
 export default Dish;
