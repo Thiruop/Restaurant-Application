@@ -3,7 +3,9 @@
     justify-content:space-between;
     align-items: center;
     padding: 1rem;
-   
+    color:#c53683;
+    background-color:rgb(43,43,230);   
+    margin-bottom: 10px;
 }
 .search{
     flex-grow: 1;

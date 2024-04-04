@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import { AdminNav } from '../components';
 
 const AdminIssuesView = () => {
     const [owners, setOwners] = useState([]);
@@ -18,7 +19,9 @@ const AdminIssuesView = () => {
 
     return (
         <div>
-            <h1>Admin Issues</h1>
+             <nav>
+                    <AdminNav/>
+                </nav>
             <table>
                 <thead>
                     <tr>

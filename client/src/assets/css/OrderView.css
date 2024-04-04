@@ -1,0 +1,18 @@
+/* OrderView.css */
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table-container th,
+  .table-container td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    margin-left: 0px !important;
+  }
+  
+  .table-container th {
+    background-color: #f2f2f2;
+  }
+  

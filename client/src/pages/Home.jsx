@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
-// added by ikyatha
 import "../assets/css/Restaurant.css";
 
 const Home = () => {
@@ -61,8 +60,6 @@ const Home = () => {
             restaurant.location.toLowerCase().includes(searchTerm.toLowerCase()) ||
             restaurant.restaurant_status === "open"
         );
-        
-        // Sort filteredRestaurants based on availability
         filtered.sort((a, b) => {
             if (a.availability === "close" && b.availability === "open") {
                 return 1;

@@ -1,0 +1,71 @@
+.bucket-con {
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
+  
+  .col-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+    margin-bottom: 20px;
+
+  }
+  
+  .resbucketlist {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  .h5, h6, p {
+    margin: 5px;
+  }
+  
+  .img1 {
+    height: 200px;
+    width: 200px;
+    border-radius: 10px;
+  }
+  
+  .cancel {
+    padding: 10px 20px;
+    background-color: rgb(43, 43, 230);
+    color: #fd0083;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+    border-radius: 4px;
+  }
+  
+  .cancel:hover {
+    background-color: blue;
+  }
+  
+  .Paymentbutton {
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .paynow {
+    padding: 10px 20px;
+    background-color: rgb(43, 43, 230);
+    color: #fd0083;
+    border: none;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+  .paynow:hover {
+    background-color: blue;
+  }
+  

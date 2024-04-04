@@ -1,23 +1,26 @@
+DeliveryPartner.css
+.table-heading {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
 .orders-table {
-    width: 100%;
-    border-collapse: collapse;
-  }
-  
-  .orders-table th, .orders-table td {
-    border: 1px solid #ddd;
-    padding: 8px;
-    text-align: left;
-  }
-  
-  .orders-table th {
-    background-color: #f2f2f2;
-  }
-  
-  .orders-table tbody tr:nth-child(even) {
-    background-color: #f2f2f2;
-  }
-  
-  .orders-table tbody tr:hover {
-    background-color: #ddd;
-  }
-  
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.pending-row {
+  background-color: orange;
+}
+
+.delivered-row {
+  background-color: lightgreen;
+}
