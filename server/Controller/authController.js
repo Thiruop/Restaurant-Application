@@ -271,8 +271,6 @@ export const UpdateOrders = async (req, res) => {
                 return res.status(404).json({ error: `Delivery partner with order ID ${order._id} not found` });
             }
         }
-
-        // Update orders for admins
         const adminFilter = {
             'view_orders.username': { $exists: true }, 
             'view_orders.dish_name': { $exists: true },
@@ -281,9 +279,9 @@ export const UpdateOrders = async (req, res) => {
 
         const adminUpdate = {
             $set: {
-                'view_orders.$[elem].track_down': orders[0].track_down, // Only update track_down field
-                'view_orders.$[elem].dish_name': orders[0].dish_name, // Include dish_name field
-                'view_orders.$[elem].restaurant_name': orders[0].restaurant_name // Include restaurant_name field
+                'view_orders.$[elem].track_down': orders[0].track_down, 
+                'view_orders.$[elem].dish_name': orders[0].dish_name, 
+                'view_orders.$[elem].restaurant_name': orders[0].restaurant_name 
             }
         };
 
@@ -317,7 +315,6 @@ export const UpdateOrders = async (req, res) => {
 
                 await existingEntry.save();
             } else {
-                // If member not found, return error
                 return res.status(404).json({ error: `Member with name ${order.username} not found` });
             }
         }
@@ -385,7 +382,6 @@ export const DeleteTrackDown=async (req, res) => {
  
 export const saveIssues = async (req, res) => {
     try {
-        // Extract data from request body
         const { email, availability, username, restaurant, issue } = req.body;
         console.log(email)
         console.log(availability)
@@ -405,7 +401,7 @@ export const saveIssues = async (req, res) => {
         }
         
         if (username && restaurant && issue) {
-            // Update the issues field
+            
             owner.issues = issue;
         }
     
@@ -416,8 +412,6 @@ export const saveIssues = async (req, res) => {
             { availability: availability },
             { new: true }
         );
-
-        // Save the changes to the restaurant document
         await updaterestaurant.save();
         res.status(200).json({ message: 'Owner details updated successfully' });
     } catch (error) {
@@ -432,6 +426,7 @@ export const OwnerDetails=async (req, res) => {
 
         if (!owner) {
             return res.status(404).json({ error: "Owner not found" });
+
         }
         res.status(200).json(owner);
     } catch (error) {
