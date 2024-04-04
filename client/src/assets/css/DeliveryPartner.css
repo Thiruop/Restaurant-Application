@@ -1,3 +1,29 @@
+DeliveryPartner.css
+.table-heading {
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+.pending-row {
+  background-color: orange;
+}
+
+.delivered-row {
+  background-color: lightgreen;
+}
 .table-heading {
   text-align: center;
   margin-top: 25px;
