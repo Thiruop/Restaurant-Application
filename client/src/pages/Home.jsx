@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import "../assets/css/Restaurant.css";
-
+import { UserNav } from "../components";
+ 
 const Home = () => {
     const [userEmail, setUserEmail] = useState("");
     const [userName, setUserName] = useState("");
@@ -10,7 +11,7 @@ const Home = () => {
     const [searchTerm, setSearchTerm] = useState("");
     const [filteredRestaurants, setFilteredRestaurants] = useState([]);
     const navigate = useNavigate();
-
+ 
     useEffect(() => {
         const storedEmail = localStorage.getItem('userEmail');
         if (storedEmail) {
@@ -20,8 +21,8 @@ const Home = () => {
         if(token && !userName){
             fetchUserData(token);
         }
-    }, [userName]); 
-
+    }, [userName]);
+ 
     const fetchUserData = async (token) => {
         try {
             const response = await fetch("http://localhost:3000/api/user", {
@@ -41,7 +42,7 @@ const Home = () => {
             console.error("Error fetching user data:", error);
         }
     };
-
+ 
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -53,7 +54,7 @@ const Home = () => {
         };
         fetchData();
     }, []);
-
+ 
     useEffect(() => {
         const filtered = restaurants.filter(restaurant =>
             restaurant.restaurant_name.toLowerCase().includes(searchTerm.toLowerCase()) ||
@@ -68,33 +69,33 @@ const Home = () => {
             }
             return 0;
         });
-
+ 
         setFilteredRestaurants(filtered);
     }, [searchTerm, restaurants]);
-
+ 
     const handleSearch = (e) => {
         setSearchTerm(e.target.value);
     };
-
+ 
     const handleRestaurantClick = (restaurant) => {
-        const { location: restaurantLocation } = restaurant; 
+        const { location: restaurantLocation } = restaurant;
         localStorage.setItem("restaurantLocation", restaurantLocation);
         if(restaurant.availability==="close"){
             navigate("/restauranterror")
         }else{
             navigate("/dish", { state: { restaurantData: restaurant } });
         }
-        
-        
+       
+       
     };
-
+ 
     const handleLogout = () => {
         localStorage.removeItem('token');
         localStorage.removeItem('userEmail');
         localStorage.removeItem('userName');
-        navigate("/"); 
+        navigate("/");
     };
-
+ 
     return (
         <div>
             <nav className="navmain">
@@ -106,8 +107,11 @@ const Home = () => {
                     <button className="searchbutton" onClick={handleSearch}>Search</button>
                 </div>
                 <div>
-                    <button className="link" onClick={handleLogout}>LogOut</button>
+                    <UserNav />
                 </div>
+                {/* <div>
+                    <button className="link" onClick={handleLogout}>LogOut</button>
+                </div> */}
             </nav>
             <main>
                 <div className="card-container" >
@@ -126,5 +130,5 @@ const Home = () => {
         </div>
     );
 }
-
+ 
 export default Home;

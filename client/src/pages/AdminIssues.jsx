@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import { AdminNav } from '../components';
+
 import axios from "axios";
 import { AdminNav } from '../components';
 
@@ -19,10 +21,10 @@ const AdminIssuesView = () => {
 
     return (
         <div>
-             <nav>
+                <nav>
                     <AdminNav/>
-                </nav>
-            <table>
+                </nav>   
+             <table>
                 <thead>
                     <tr>
                         <th>Name</th>

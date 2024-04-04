@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate, Link } from "react-router-dom";
+import "../assets/css/bucketlist.css";
+import { UserNav } from "../components";
 
 const BucketList = () => {
   const [bucketList, setBucketList] = useState([]);
@@ -125,33 +127,50 @@ const BucketList = () => {
   }
 
   return (
-    <div>
-      <h1>Bucket List</h1>
-      {bucketList.length === 0 ? (
+    <div className="bucket-con">
+        <nav className="navmain">
+              <div>
+                <h3><b>BucketList</b></h3>
+              </div>
+              <div>
+                    <UserNav   />
+              </div>
+          </nav>   
+        {bucketList.length === 0 ? (
         <div>
-        <p>No items in the bucket list</p>
-        <Link to ="/home"><button> Add Item </button></Link>
+          <p>No items in the bucket list</p>
+          <Link to ="/home"><button> Add Item </button></Link>
         </div>   
       ) : (
-        <ul>
+        <div className="container">
+        <div className="row">
+        {/* <ul className="bucket-list"> */}
           {bucketList.map((item) => (
-            <li key={item._id}>
-              <h2>{item.restaurant_name}</h2>
-              <ul>
-                {item.dishes.map((dish) => (
-                  <li key={dish._id}>
-                    <h3>{dish.dish_name}</h3>
-                    <p>Price: {dish.dish_price}</p>
-                    <img src={dish.dish_image} alt={dish.dish_name} />
-                    <button onClick={() => handleCancel(dish.dish_name)}>Cancel</button>
-                  </li>
-                ))}
-              </ul>
-            </li>
+             <div key={item._id} className="col-3">
+             <div className="resbucketlist">
+                <li key={item._id} className="bucket-item">
+                  <h2 className="h5">{item.restaurant_name}</h2>
+                  <ul className="dishes-list">
+                    {item.dishes.map((dish) => (
+                      <li key={dish._id} className="dish-item">
+                        <h3>{dish.dish_name}</h3>
+                        <p>Price: {dish.dish_price}</p>
+                        <img className="img1" src={dish.dish_image} alt={dish.dish_name} />
+                        <button className="cancel" onClick={() => handleCancel(dish.dish_name)}>Cancel</button>
+                      </li>
+                    ))}
+                  </ul>
+                </li>
+              </div>
+              </div>
           ))}
-          <button onClick={handlePayment}>Pay Now ({formattedTotalPrice})</button>
-          <Link to="/home"><button>Add Item</button></Link> 
-        </ul>
+          {/* </ul> */}
+      </div>
+       < div className="Paymentbutton">
+          <button  onClick={handlePayment}>Pay Now ({formattedTotalPrice})</button>
+          <Link to="/home" className="additem"><button>Add Item</button></Link>
+        </div>
+      </div>
       )}
     </div>
   );

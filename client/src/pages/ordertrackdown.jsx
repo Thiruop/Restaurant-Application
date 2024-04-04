@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import "../assets/css/TrackDown.css"; 
+import { UserNav } from "../components";
 
 const TrackDown = () => {
     const [userData, setUserData] = useState({});
@@ -60,24 +61,33 @@ const TrackDown = () => {
 
     return (
         <div className="center-container"> 
-            <main className="main">
-                <div>
-                    <p className="title">Track Your Orders: {userData.name}</p>
+          <nav className="navmain">
+            <div>
+              <h3><b>Track Order</b></h3>
+            </div>
+            <div>
+              <UserNav />
+            </div>
+            
+          </nav> 
+          <main className="main">
+            
+            <div className="cart-items">
+            <p className="title">Track Your Orders: {userData.name}</p>
+
+              {userData.track_down && userData.track_down.map((item, index) => (
+                <div key={index} className="order-container">
+                  <p>Restaurant: {item.restaurantname}</p>
+                  <p>Dish: {item.dishname}</p>
+                  <p>Track Down: {item.trackdown}</p>
+                  <p>Order Status: {item.orderstatus}</p>
+                  {item.orderstatus === "delivered" && (
+                    <button onClick={() => handleGotIt(item.restaurantname, item.dishname, item.orderstatus, item.trackdown)}>Got It</button>
+                  )}
                 </div>
-                <div>
-                    {userData.track_down && userData.track_down.map((item, index) => (
-                        <div key={index} className="order-container">
-                            <p>Restaurant: {item.restaurantname}</p>
-                            <p>Dish: {item.dishname}</p>
-                            <p>Track Down: {item.trackdown}</p>
-                            <p>Order Status: {item.orderstatus}</p>
-                            {item.orderstatus === "delivered" && (
-                                <button onClick={() => handleGotIt(item.restaurantname, item.dishname, item.orderstatus, item.trackdown)}>Got It</button>
-                            )}
-                        </div>
-                    ))}
-                </div>
-            </main>
+              ))}
+            </div>
+          </main>
         </div>
     );
 }
