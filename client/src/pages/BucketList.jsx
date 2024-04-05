@@ -53,39 +53,42 @@ const BucketList = () => {
 
   const handlePayment = async () => {
     const userName = localStorage.getItem("userName");
-    const userEmail = localStorage.getItem("userEmail")
-    const restaurantLocation = localStorage.getItem("restaurantLocation");
-
-    const orderItems = bucketList.reduce((acc, cur) => {
-      const { restaurant_name: restaurantName, dishes } = cur;
-      const items = dishes.map((dish) => ({
-        username: userName,
-        dish_name: dish.dish_name,
-        restaurant_name: restaurantName,
-        price: dish.dish_price,
-        location: restaurantLocation
-      }));
-      return [...acc, ...items];
-    }, []);
+    const userEmail = localStorage.getItem("userEmail");
+  
+    let totalPrice = 0; 
+  
+    const orderItems = []; 
+  
+    bucketList.forEach((item) => {
+      const { restaurant_name: restaurantName, dishes } = item;
+      dishes.forEach((dish) => {
+        totalPrice += +dish.dish_price; 
+        orderItems.push({
+          username: userName,
+          dish_name: dish.dish_name,
+          restaurant_name: restaurantName,
+          price: dish.dish_price,
+        });
+      });
+    });
   
     try {
       const token = localStorage.getItem("token");
-
+  
       await axios.post("http://localhost:3000/api/order", { email: userEmail, order_item: orderItems }, {
         headers: {
           Authorization: `Bearer ${token}`
         }
       });
-
-      // Clear bucket list after successful payment
       await clearBucketList();
-
-      alert(`Total Price: ${formattedTotalPrice}. Payment Successful!`);
+  
+      alert(`Total Price: $${totalPrice.toFixed(2)}. Payment Successful!`); // Display total price
       navigate("/trackdown");
     } catch (error) {
       console.error("Error processing payment:", error);
     }
   };
+  
 
   const clearBucketList = async () => {
     try {
@@ -96,8 +99,6 @@ const BucketList = () => {
           Authorization: `Bearer ${token}`
         }
       });
-
-      // Clear the bucket list locally after successful request
       setBucketList([]);
     } catch (error) {
       console.error("Error clearing bucket list:", error);
@@ -144,7 +145,7 @@ const BucketList = () => {
       ) : (
         <div className="container">
         <div className="row">
-        {/* <ul className="bucket-list"> */}
+        {}
           {bucketList.map((item) => (
              <div key={item._id} className="col-3">
              <div className="resbucketlist">

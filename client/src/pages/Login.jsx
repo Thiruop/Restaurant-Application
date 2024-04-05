@@ -62,6 +62,9 @@ const Login = () => {
                             <p className="text-center fw-bold mx-3 mb-0 text-muted">Don't have an account? <Link to="/register">Sign up</Link></p>
                         </div>
                         <div className="divider d-flex align-items-center justify-content-center my-4">
+                              <p className="text-center fw-bold mx-3 mb-0 text-muted">OR</p>
+                          </div>
+                        <div className="divider d-flex align-items-center justify-content-center my-4">
                         <p className="text-center fw-bold mx-3 mb-0 text-muted"> If you are Employee<Link to="login">SignIn here</Link></p>
                         </div>
                         <div className=" align-items-center justify-content-center justify-content-lg-start">

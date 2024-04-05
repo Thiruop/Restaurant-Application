@@ -27,13 +27,14 @@ DeliveryPartner.css
 .table-heading {
   text-align: center;
   margin-top: 25px;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
  
 .orders-table {
   width: 100%;
   border-collapse: collapse;
   margin-bottom: 20px;
+  margin-top: 60px;
 }
  
 .orders-table th,

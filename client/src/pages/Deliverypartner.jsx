@@ -58,6 +58,7 @@ const DeliveryPartner = () => {
  
   return (
     <div>
+        <h2 className="table-heading" style={{alignItems:"center",marginTop:"3px"}}>Back to Work Delivery Partner</h2>
       <h2 className="table-heading">Received Orders</h2>
       {error ? (
         <p>{error}</p>

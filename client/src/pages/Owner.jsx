@@ -60,7 +60,7 @@ const Owner = () => {
             <h1>Welcome Owner</h1>
             {error && <p>{error}</p>}
             <div className="owner-info">
-                <h5><p style={{marginLeft:"100px"}}>Hi {ownerDetails.name}!</p></h5>
+                <h5><p style={{marginLeft:"150px",marginTop:"5px"}}>Hi {ownerDetails.name}!</p></h5>
                 <h5><p>Restaurant Name: {ownerDetails.restaurant_name}</p></h5>
             </div>
             <form onSubmit={handleSubmit}>

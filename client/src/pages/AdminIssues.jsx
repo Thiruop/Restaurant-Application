@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { AdminNav } from '../components';
-
 import axios from "axios";
-import { AdminNav } from '../components';
+
 
 const AdminIssuesView = () => {
     const [owners, setOwners] = useState([]);

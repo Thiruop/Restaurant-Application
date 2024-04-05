@@ -89,12 +89,7 @@ const Home = () => {
        
     };
  
-    const handleLogout = () => {
-        localStorage.removeItem('token');
-        localStorage.removeItem('userEmail');
-        localStorage.removeItem('userName');
-        navigate("/");
-    };
+  
  
     return (
         <div>
@@ -109,9 +104,7 @@ const Home = () => {
                 <div>
                     <UserNav />
                 </div>
-                {/* <div>
-                    <button className="link" onClick={handleLogout}>LogOut</button>
-                </div> */}
+                
             </nav>
             <main>
                 <div className="card-container" >

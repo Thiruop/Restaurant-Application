@@ -48,24 +48,26 @@ const Register = () => {
                   {error && <p className="error">{error}</p>} 
                   <form onSubmit={handleSubmit}>
                       <div className="form-outline mb-2">
-                          <input type="text" name="name" className="form-control form-control-lg" style={inputStyle} value={formData.name} onChange={handleChange} />
                           <label className="form-label" htmlFor="form1Example13">Username</label>
+                          <input type="text" name="name" className="form-control form-control-lg" style={inputStyle} value={formData.name} onChange={handleChange} />
+                          
                       </div>
                       <div className="form-outline mb-2">
-                          <input type="email" name="email" className="form-control form-control-lg" style={inputStyle} value={formData.email} onChange={handleChange} />
                           <label className="form-label" htmlFor="form1Example13">Email address</label>
+                          <input type="email" name="email" className="form-control form-control-lg" style={inputStyle} value={formData.email} onChange={handleChange} />
+                          
                       </div>
                       <div className="form-outline mb-2">
-                          <input type="password" name="password" className="form-control form-control-lg" style={inputStyle} value={formData.password} onChange={handleChange} />
                           <label className="form-label" htmlFor="form1Example23">Password</label>
+                          <input type="password" name="password" className="form-control form-control-lg" style={inputStyle} value={formData.password} onChange={handleChange} />
                       </div>
                       <div className="form-outline mb-2">
-                          <input type="password" name="confirm_password" className="form-control form-control-lg" style={inputStyle} value={formData.confirm_password} onChange={handleChange} />
                           <label className="form-label" htmlFor="form1Example23">Confirm Password</label>
+                          <input type="password" name="confirm_password" className="form-control form-control-lg" style={inputStyle} value={formData.confirm_password} onChange={handleChange} />
                       </div>
                       <div className="form-outline mb-2">
-                          <input type="text" name="location" className="form-control form-control-lg" style={inputStyle} value={formData.location} onChange={handleChange} />
                           <label className="form-label" htmlFor="form1Example23">location</label>
+                          <input type="text" name="location" className="form-control form-control-lg" style={inputStyle} value={formData.location} onChange={handleChange} />
                       </div>
                      
                       <div className="button-container">

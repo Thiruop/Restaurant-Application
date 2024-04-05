@@ -147,25 +147,53 @@ export const UpdateUser =async(req,res)=>{
 export const UpdateOrder = async (req, res) => {
     try {
         const { email, order_item } = req.body;
-        const user = await Member.findOne({ email });
-        if (!user) {
-            return res.status(404).json({ message: "User not found" });
-        }
-        user.order_item.push(...order_item);
-        await user.save();
-        const restaurantLocation = order_item[0].location;
-        const matchingDeliveryPartners = await Partner.find({ location: restaurantLocation });
-        for (const partner of matchingDeliveryPartners) {
-            partner.view_orders.push(...order_item);
-            await partner.save();
-        }
-        const admins = await Admin.find();
-        for (const admin of admins) {
-            admin.view_orders.push(...order_item);
-            await admin.save();
-        }
 
-        res.status(200).json({ message: "Order updated successfully" });
+        
+        const restaurantNames = order_item.map(item => item.restaurant_name);
+
+    
+        for (const name of restaurantNames) {
+            
+            const restaurant = await Restaurant.findOne({ restaurant_name: name });
+            
+            if (restaurant) {
+               
+                const restaurantLocation = restaurant.location;
+                console.log(`Restaurant ${name} is located in ${restaurantLocation}`);
+                
+              
+                const matchingDeliveryPartners = await Partner.find({ location: restaurantLocation });
+                for (const partner of matchingDeliveryPartners) {
+               
+                    const filteredOrderItems = order_item.filter(item => item.restaurant_name === name)
+                        .map(item => ({ ...item, location: restaurantLocation }));
+                    partner.view_orders.push(...filteredOrderItems);
+                    await partner.save();
+                }
+                const admins = await Admin.find();
+                for (const admin of admins) {
+                    
+                    const filteredOrderItems = order_item.filter(item => item.restaurant_name === name)
+                        .map(item => ({ ...item, location: restaurantLocation }));
+                    admin.view_orders.push(...filteredOrderItems);
+                    await admin.save();
+                }
+                const user = await Member.findOne({ email });
+                if (!user) {
+                    return res.status(404).json({ message: "User not found" });
+                }
+                const filteredOrderItems = order_item.filter(item => item.restaurant_name === name)
+                    .map(item => ({ ...item, location: restaurantLocation }));
+                
+                user.order_item.push(...filteredOrderItems);
+                await user.save();
+            } else {
+                console.log(`Restaurant ${name} not found`);
+                
+            }
+        }
+        
+        res.status(200).json({ message: "Orders updated successfully" });
     } catch (error) {
         console.error("Error updating order:", error);
         res.status(500).json({ message: "Internal server error" });
@@ -259,12 +287,14 @@ export const ClearBucketList = async (req, res) => {
 export const UpdateOrders = async (req, res) => {
     try {
         const { orders } = req.body;
+        console.log(orders)
 
         // Update orders for delivery partners
         for (const order of orders) {
             const updatedPartner = await Partner.findOneAndUpdate(
                 { 'view_orders._id': order._id },
-                { $set: { 'view_orders.$.track_down': order.track_down } }, // Only update track_down field
+                { $set: { 'view_orders.$.track_down': order.track_down },
+                'view_orders.$.order_status': order.order_status }, 
                 { new: true }
             );
             if (!updatedPartner) {
@@ -281,7 +311,8 @@ export const UpdateOrders = async (req, res) => {
             $set: {
                 'view_orders.$[elem].track_down': orders[0].track_down, 
                 'view_orders.$[elem].dish_name': orders[0].dish_name, 
-                'view_orders.$[elem].restaurant_name': orders[0].restaurant_name 
+                'view_orders.$[elem].restaurant_name': orders[0].restaurant_name,
+                'view_orders.$[elem].order_status': orders[0].order_status
             }
         };
 
